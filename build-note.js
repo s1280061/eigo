@@ -61,13 +61,15 @@ cats.forEach(c=>{
   md += `---\n\n`;
 });
 
+const quote = t => String(t).split('\n\n').map(p=>'> '+p.replace(/\n/g,'  \n> ')).join('\n>\n');
 md += `## 3. 模範解答（原文 → 自然な表現 → 改良版）\n\n`;
+md += `_模範解答は段落構成（導入・本論・結論）を意識して整えています。空行で段落を区切っています。_\n\n`;
 D.essays.forEach(e=>{
   md += `### ${e.title}（${e.words||''}）\n`;
-  md += `> 🖊 **設問**: ${e.prompt}\n\n`;
-  md += `**① あなたの原文**\n\n> ${e.original}\n\n`;
-  md += `**② 自然な表現**\n\n> ${e.natural}\n\n`;
-  if(e.improved){ md += `**③ 改良版（Band 7+）**\n\n> ${e.improved}\n\n`; }
+  md += `🖊 **設問**: ${e.prompt}\n\n`;
+  md += `**① あなたの原文**\n\n${quote(e.original)}\n\n`;
+  md += `**② 自然な表現**\n\n${quote(e.natural)}\n\n`;
+  if(e.improved){ md += `**③ 改良版（Band 7+）**\n\n${quote(e.improved)}\n\n`; }
   md += `---\n\n`;
 });
 

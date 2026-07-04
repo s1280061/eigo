@@ -117,6 +117,8 @@
   .eblock{font-size:13px; line-height:1.65; border-radius:9px; padding:10px 12px; margin-bottom:8px;}
   .etag{display:inline-block; font-size:11px; font-weight:700; border-radius:6px; padding:1px 7px; margin-right:6px;}
   .etag.bad{background:#3a2530; color:var(--bad);} .etag.good{background:#1e3327; color:var(--good);} .etag.imp{background:#2a2440; color:#c084fc;}
+  .eblock .epar{margin:0 0 8px;} .eblock .epar:last-child{margin-bottom:0;}
+  .eblock .etag{margin-bottom:6px;}
   .eblock.eorig{background:rgba(255,107,107,.07); color:var(--sub);}
   .eblock.enat{background:rgba(74,222,128,.07); color:var(--ink);}
   .eblock.eimp{background:rgba(192,132,252,.08); color:var(--ink);}
@@ -343,14 +345,15 @@ function buildModels(){
       <h3>${esc(e.title)} <span class="ewords">${esc(e.words||'')}</span></h3>
       <div class="eprompt">🖊 ${esc(e.prompt)}</div>
       <div class="etoggle" onclick="toggleModel('${e.id}')">${openModel[e.id]?'▲ 原文を隠す':'▼ あなたの原文を見る'}</div>
-      ${openModel[e.id]?`<div class="eblock eorig"><span class="etag bad">① 原文</span>${esc(e.original)}</div>`:''}
-      <div class="eblock enat"><span class="etag good">② 自然な表現</span>${esc(e.natural)}</div>
-      ${e.improved?`<div class="eblock eimp"><span class="etag imp">③ 改良版（Band 7+）</span>${esc(e.improved)}</div>`:''}
+      ${openModel[e.id]?`<div class="eblock eorig"><span class="etag bad">① 原文</span>${paras(e.original)}</div>`:''}
+      <div class="eblock enat"><span class="etag good">② 自然な表現</span>${paras(e.natural)}</div>
+      ${e.improved?`<div class="eblock eimp"><span class="etag imp">③ 改良版（Band 7+）</span>${paras(e.improved)}</div>`:''}
     </div>`).join('');
 }
 function toggleModel(id){ openModel[id]=!openModel[id]; buildModels(); }
 
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function paras(t){return String(t).split('\n\n').map(function(p){return '<p class="epar">'+esc(p).replace(/\n/g,'<br>')+'</p>';}).join('');}
 function go(v){
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));
   document.getElementById('v-'+v).classList.add('on');

@@ -438,34 +438,79 @@ _Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
 
 ## 3. 模範解答（原文 → 自然な表現 → 改良版）
 
+_模範解答は段落構成（導入・本論・結論）を意識して整えています。空行で段落を区切っています。_
+
 ### 手紙: 病気の友人への研究連絡（150語以上）
-> 🖊 **設問**: Write an email to a friend. Begin: Dear ......,
+🖊 **設問**: Write an email to a friend. Begin: Dear ......,
 
 **① あなたの原文**
 
-> Dear My friend, Hello, how are you, my firend? I am the leader of a science project. I have heard you are sick. I am worry about you. I would like to infrom you three items; today's content of group work, plans to do at the next meeting and assignments for the next meeting. First of all, about today's content of group work, we conducted the validation of micro-scope accuracy. You know we have collected some data? We used that data for validation. We are going to share that consequence in next meeting. Second, about plans to do at next meeting is going to be a discussion sharing about the collected data we conducted. Lastly, the assignments for the next meeting would be reading and analyzing the collected data. This is our assignments. I hope you will come back a school again! See you later! Sincrely,
+> Dear My friend,
+>
+> Hello, how are you, my firend? I am the leader of a science project. I have heard you are sick. I am worry about you.
+>
+> I would like to infrom you three items; today's content of group work, plans to do at the next meeting and assignments for the next meeting.
+>
+> First of all, about today's content of group work, we conducted the validation of micro-scope accuracy. You know we have collected some data? We used that data for validation. We are going to share that consequence in next meeting.
+>
+> Second, about plans to do at next meeting is going to be a discussion sharing about the collected data we conducted.
+>
+> Lastly, the assignments for the next meeting would be reading and analyzing the collected data. This is our assignments.
+>
+> I hope you will come back a school again! See you later!
+>
+> Sincrely,
 
 **② 自然な表現**
 
-> Dear Ryotaro, I was informed that you are not feeling well, which is why you were unable to attend today's group meeting for our science project. I am sorry to hear that, and I wish you a speedy recovery. I would like to inform you of three items: today's content of group work, plans for the next meeting, and assignments for the next meeting. First of all, regarding today's content of group work, we conducted the validation of microscope accuracy. You know we have collected some data for validation. We are going to share the results in the next meeting. Second, the plan for the next meeting is going to be a discussion about the data we collected. Lastly, the assignments for the next meeting will be reading and analyzing the collected data. I hope you will come back to school again! See you later! Sincerely, Kaito
+> Dear Ryotaro,
+>
+> I was informed that you are not feeling well, which is why you were unable to attend today's group meeting for our science project. I am sorry to hear that, and I wish you a speedy recovery.
+>
+> I would like to inform you of three items: today's content of group work, plans for the next meeting, and assignments for the next meeting.
+>
+> First of all, regarding today's content of group work, we conducted the validation of microscope accuracy. You know we have collected some data for validation, and we are going to share the results in the next meeting.
+>
+> Second, the plan for the next meeting is going to be a discussion about the data we collected.
+>
+> Lastly, the assignments for the next meeting will be reading and analyzing the collected data.
+>
+> I hope you will come back to school again! See you later!
+>
+> Sincerely,  
+> Kaito
 
 ---
 
 ### Task2: グローバル化の利点と欠点（250語以上）
-> 🖊 **設問**: Give reasons for your answer and include relevant examples from your own knowledge or experience.
+🖊 **設問**: Give reasons for your answer and include relevant examples from your own knowledge or experience.
 
 **① あなたの原文**
 
-> There are good points and bad points respectively. First of all, in terms of good points, we can accelerate the speed of transaction which means that you can do communication easily and you can do task faster due to globalisation. If we communicate with other poeple who have the global style, we can easily and faster communicate each other. And also, we can understand each other more deeply than other style. On the other hand, there are some bad points. So, if we have the globalisation, culture of local or rural area may be in risk of dissapperment. For example, I have heard of that bad points from people who lives Africa on YouTube. And also I have noticed some statistics show that the number of languages are decreasing as time goes by. So, this is also one of the problem attributed from globalisation. In summarization, there are good points and bad points respectively. Maybe, if we accelerate more globalization, but we have the chance to produce some innovative idea discussing with each other which is come from the good aspect of globalization, understanding of diversity. And also, the opportunities of interaction of other people is going to be increasing due to globalisation. That is a best idea I have come up with. Otherwise, we better do not declare and accelerate the globalisation. In order to vitalize the opportunities of globalisation, we better do conversation from all over the world speaking common language, for example, English that leads to world's development.
+> There are good points and bad points respectively.
+>
+> First of all, in terms of good points, we can accelerate the speed of transaction which means that you can do communication easily and you can do task faster due to globalisation. If we communicate with other poeple who have the global style, we can easily and faster communicate each other. And also, we can understand each other more deeply than other style.
+>
+> On the other hand, there are some bad points. So, if we have the globalisation, culture of local or rural area may be in risk of dissapperment. For example, I have heard of that bad points from people who lives Africa on YouTube. And also I have noticed some statistics show that the number of languages are decreasing as time goes by. So, this is also one of the problem attributed from globalisation.
+>
+> In summarization, there are good points and bad points respectively. Maybe, if we accelerate more globalization, but we have the chance to produce some innovative idea discussing with each other which is come from the good aspect of globalization, understanding of diversity. And also, the opportunities of interaction of other people is going to be increasing due to globalisation. That is a best idea I have come up with. Otherwise, we better do not declare and accelerate the globalisation. In order to vitalize the opportunities of globalisation, we better do conversation from all over the world speaking common language, for example, English that leads to world's development.
 
 **② 自然な表現**
 
-> There are both good points and bad points. First of all, one good point is that we can accelerate the speed of transactions, which means that we can communicate more easily and complete tasks more quickly due to globalisation. If we communicate with other people who have a global mindset, we can communicate with each other more easily and efficiently. In addition, we can understand each other more deeply than we could with people who have different perspectives. On the other hand, there are some drawbacks. If we promote globalisation, the cultures of local or rural areas may be at risk of disappearance. I have heard about these drawbacks from people who live in Africa on YouTube. I have also noticed that some statistics show that the number of languages is decreasing over time. So, this is also one of the problems attributed to globalisation. In summary, there are both advantages and disadvantages. Maybe, if we further accelerate globalization, we will have more opportunities to produce innovative ideas by discussing them with one another. This is one of the positive aspects of globalisation because it promotes an understanding of diversity. In addition, opportunities for interaction with other people will increase due to globalisation. That is the best idea I have come up with. Otherwise, we should not continue to promote and accelerate globalisation. In order to maximize the benefits of globalisation, we should communicate with people from all over the world by speaking a common language, such as English, which can contribute to global development.
+> There are both good points and bad points.
+>
+> First of all, one good point is that we can accelerate the speed of transactions, which means that we can communicate more easily and complete tasks more quickly due to globalisation. If we communicate with other people who have a global mindset, we can communicate with each other more easily and efficiently. In addition, we can understand each other more deeply than we could with people who have different perspectives.
+>
+> On the other hand, there are some drawbacks. If we promote globalisation, the cultures of local or rural areas may be at risk of disappearance. I have heard about these drawbacks from people who live in Africa on YouTube. I have also noticed that some statistics show that the number of languages is decreasing over time. So, this is also one of the problems attributed to globalisation.
+>
+> In summary, there are both advantages and disadvantages. If we further accelerate globalisation, we will have more opportunities to produce innovative ideas by discussing them with one another. This is one of the positive aspects of globalisation because it promotes an understanding of diversity. In addition, opportunities for interaction with other people will increase due to globalisation.
+>
+> That said, we should not promote and accelerate globalisation without care. In order to maximise its benefits, we should communicate with people from all over the world by speaking a common language, such as English, which can contribute to global development.
 
 ---
 
 ### 会話返信: 多文化都市の成功例（短答）
-> 🖊 **設問**: If you had to choose one real city or country as an example of multicultural success, which one would it be and why?
+🖊 **設問**: If you had to choose one real city or country as an example of multicultural success, which one would it be and why?
 
 **① あなたの原文**
 
@@ -473,12 +518,14 @@ _Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
 
 **② 自然な表現**
 
-> It would be the United States of America because this country is successful at embracing multiculturalism in academia and industry. This country has developed by adapting to immigration. The recent situation in the U.S. is unclear to me, and I do not know what President Trump thinks. But actually, one example of a person who is successful and has benefited from the multicultural nature of American cities is Elon Musk, who was born in a different country, South Africa.
+> It would be the United States of America, because this country is successful at embracing multiculturalism in academia and industry. This country has developed by adapting to immigration.
+>
+> The recent situation in the U.S. is unclear to me, and I do not know what President Trump thinks. But actually, one example of a person who is successful and has benefited from the multicultural nature of American cities is Elon Musk, who was born in a different country, South Africa.
 
 ---
 
 ### 面接: 母国で人気の祭り（短答）
-> 🖊 **設問**: What is the most popular festival in your home country? Why?
+🖊 **設問**: What is the most popular festival in your home country? Why?
 
 **① あなたの原文**
 
@@ -495,7 +542,7 @@ _Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
 ---
 
 ### Task1: Facebook利用者の年齢層（円グラフ）（150語以上）
-> 🖊 **設問**: Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+🖊 **設問**: Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
 
 **① あなたの原文**
 
@@ -503,20 +550,41 @@ _Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
 
 **② 自然な表現**
 
-> These pie charts show information on the age range of Facebook users in 2005 and 2015. The left pie chart shows 2005 data, which indicates that Facebook users aged 13 to 24 were the dominant group. On the other hand, the right pie chart for 2015 data shows that the majority of Facebook users were aged 25 to 40. Interestingly, each pie chart shows that people aged 66 to 80 used Facebook less than the other three age groups. In more detail, for the left pie chart, it can be seen that the 13 to 24 age group made up 51% of all Facebook users, followed by the 25 to 40 age group with 32%. The remaining two age groups, 41 to 65 and 66 to 80, accounted for 16% and 1% of users, respectively. Turning to the right pie chart, a noticeable change can be observed. The number of users aged 13 to 24 fell to 31%, while that of users aged 25 to 40 rose to 47%. The proportions of users aged 41 to 65 and 66 to 80 also increased, albeit slightly. The 41 to 65 age group increased to 19%, and the 66 to 80 age group climbed to 3%.
+> These pie charts show information on the age range of Facebook users in 2005 and 2015.
+>
+> The left pie chart shows 2005 data, which indicates that Facebook users aged 13 to 24 were the dominant group. On the other hand, the right pie chart for 2015 data shows that the majority of Facebook users were aged 25 to 40. Interestingly, each pie chart shows that people aged 66 to 80 used Facebook less than the other three age groups.
+>
+> In more detail, for the left pie chart, it can be seen that the 13 to 24 age group made up 51% of all Facebook users, followed by the 25 to 40 age group with 32%. The remaining two age groups, 41 to 65 and 66 to 80, accounted for 16% and 1% of users, respectively.
+>
+> Turning to the right pie chart, a noticeable change can be observed. The number of users aged 13 to 24 fell to 31%, while that of users aged 25 to 40 rose to 47%. The proportions of users aged 41 to 65 and 66 to 80 also increased, albeit slightly: the 41 to 65 age group rose to 19%, and the 66 to 80 age group climbed to 3%.
 
 ---
 
 ### 手紙: 塾への応募（フォーマル）（150語以上）
-> 🖊 **設問**: Write a letter. Begin: Dear Sir or Madam,
+🖊 **設問**: Write a letter. Begin: Dear Sir or Madam,
 
 **① あなたの原文**
 
-> Dear Sir, I am Kaito from Japan who am intersted in your cram school. I am curious your cram school seeing its advertisement. I have graduated from graduated school in Japan, studying about IT. So I can teach the programming and IT. And Also, I recently have been developing moble application, so I can suitable for teaching IT to the children who are interested in IT. Sincerely,
+> Dear Sir,
+>
+> I am Kaito from Japan who am intersted in your cram school. I am curious your cram school seeing its advertisement.
+>
+> I have graduated from graduated school in Japan, studying about IT. So I can teach the programming and IT. And Also, I recently have been developing moble application, so I can suitable for teaching IT to the children who are interested in IT.
+>
+> Sincerely,
 
 **② 自然な表現**
 
-> Dear Sir, I am Kaito from Japan, and I am interested in your cram school. I became curious about your cram school after seeing its advertisement. I graduated from graduate school in Japan, studying IT. So I can teach programming and IT. Also, I have recently been developing mobile applications, so I am suitable for teaching IT to children who are interested in IT. Sincerely, Kaito
+> Dear Sir,
+>
+> I am Kaito from Japan, and I am interested in your cram school. I became curious about your cram school after seeing its advertisement.
+>
+> I graduated from graduate school in Japan, where I studied IT, so I can teach programming and IT. Also, I have recently been developing mobile applications, which means I am well suited to teaching IT to children who are interested in the field.
+>
+> I look forward to hearing from you.
+>
+> Sincerely,  
+> Kaito
 
 ---
 

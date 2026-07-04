@@ -6,6 +6,7 @@ const window = {};
 eval(fs.readFileSync(path.join(dir, 'data.js'), 'utf8'));
 const D = window.IELTS_DATA;
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const paras = t => String(t).split('\n\n').map(p=>`<p class="epar">${esc(p).replace(/\n/g,'<br>')}</p>`).join('');
 
 const cats = ["品詞","前置詞","冠詞","コロケーション","文構造"];
 const catDesc = {
@@ -38,9 +39,9 @@ const prio = D.priority.map(p=>`<div class="pr"><h3>${esc(p.tier)} <span class="
 const essays = D.essays.map(e=>`<div class="es">
   <h3>${esc(e.title)} <span class="ewords">（${esc(e.words||'')}）</span></h3>
   <div class="eprompt">🖊 ${esc(e.prompt)}</div>
-  <div class="eblock eorig"><span class="etag bad">① あなたの原文</span><br>${esc(e.original)}</div>
-  <div class="eblock enat"><span class="etag good">② 自然な表現</span><br>${esc(e.natural)}</div>
-  ${e.improved?`<div class="eblock eimp"><span class="etag imp">③ 改良版（Band 7+）</span><br>${esc(e.improved)}</div>`:''}
+  <div class="eblock eorig"><span class="etag bad">① あなたの原文</span>${paras(e.original)}</div>
+  <div class="eblock enat"><span class="etag good">② 自然な表現</span>${paras(e.natural)}</div>
+  ${e.improved?`<div class="eblock eimp"><span class="etag imp">③ 改良版（Band 7+）</span>${paras(e.improved)}</div>`:''}
 </div>`).join('');
 
 const html = `<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8">
@@ -82,6 +83,8 @@ th { background:#0b4f8a; color:#fff; }
 .es h3 .ewords { font-size:9pt; color:#888; font-weight:normal; }
 .eprompt { font-size:9pt; color:#555; background:#eef2f7; border-radius:4px; padding:2mm 3mm; margin:1.5mm 0 2.5mm; }
 .eblock { font-size:9.5pt; line-height:1.6; border-radius:5px; padding:2.5mm 3mm; margin:2mm 0; }
+.eblock .epar { margin:0 0 2mm; } .eblock .epar:last-child { margin-bottom:0; }
+.eblock .etag { margin-bottom:1.5mm; }
 .etag { display:inline-block; font-size:8.5pt; font-weight:bold; border-radius:3px; padding:0.5mm 2mm; }
 .etag.bad { background:#fdecec; color:#c0392b; } .etag.good { background:#e9f7ef; color:#1e8449; } .etag.imp { background:#f0eafb; color:#7b3fe4; }
 .eblock.eorig { background:#fdf3f3; color:#777; } .eblock.enat { background:#eef9f2; } .eblock.eimp { background:#f5f0fc; }
