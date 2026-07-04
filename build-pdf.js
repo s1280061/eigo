@@ -17,7 +17,8 @@ const catDesc = {
 
 function mistakeBlock(m){
   return `<div class="m">
-    <div class="mid">${esc(m.id)}</div>
+    <div class="mid">${esc(m.id)}${m.topic?` &nbsp;<span class="topic">📍 ${esc(m.topic)}</span>`:''}</div>
+    ${m.ctx?`<div class="ctx">${esc(m.ctx)}</div>`:''}
     <div class="row"><span class="lab bad">❌ 誤り</span><span class="txt">${esc(m.wrong)}</span></div>
     <div class="row"><span class="lab good">✅ 正しい</span><span class="txt">${esc(m.right)}</span></div>
     <div class="why"><b>💡 なぜ:</b> ${esc(m.why)}</div>
@@ -52,6 +53,8 @@ h3 { font-size:11.5pt; margin:4mm 0 2mm; }
 .cat { break-inside:avoid; }
 .m { border:1px solid #d8d8d8; border-radius:6px; padding:3mm 4mm; margin:3mm 0; break-inside:avoid; }
 .mid { font-weight:bold; color:#0b4f8a; font-size:9pt; }
+.topic { color:#b06a00; font-weight:bold; }
+.ctx { font-size:9pt; color:#333; background:#f2f6fb; border-radius:4px; padding:2mm 3mm; margin:1.5mm 0; }
 .row { display:flex; gap:3mm; margin:1mm 0; }
 .lab { flex:0 0 20mm; font-weight:bold; font-size:9pt; }
 .lab.bad { color:#c0392b; }
