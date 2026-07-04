@@ -113,7 +113,41 @@ window.IELTS_DATA = {
     { id:"D-8", cat:"コロケーション", topic:"手紙: フォーマルレターの結び", ctx:"宛名が Dear Sir/Madam（相手の名前が不明）の手紙。最後の“結びの言葉”を書く場面。",
       wrong:"Dear Sir, ... Sincerely,", right:"Dear Sir/Madam, ... Yours faithfully,",
       why:"相手の名前が不明で Dear Sir/Madam の場合は Yours faithfully。名前がわかる Dear Mr Tanaka なら Yours sincerely。IELTS Formal Letterの定番ルール。",
-      ex:"Dear Sir or Madam, … Yours faithfully, Kaito" }
+      ex:"Dear Sir or Madam, … Yours faithfully, Kaito" },
+
+    // ── 手紙: 病気の友人への研究連絡 ──
+    { id:"A-7", cat:"品詞", topic:"手紙: 病気の友人へ", ctx:"病気の友人を気づかう場面。「あなたのことが心配です」と伝えたい。",
+      wrong:"I am worry about you", right:"I am worried about you",
+      why:"worry は動詞（心配する）。「心配している」という“状態”は形容詞 worried。be動詞 + worried + about。",
+      ex:"I am really worried about your health." },
+    { id:"B-7", cat:"前置詞", topic:"手紙: 病気の友人へ", ctx:"本題の切り出し。「3つの点をお知らせします」と言いたい場面。",
+      wrong:"I would like to inform you three items", right:"I would like to inform you of three things",
+      why:"inform は inform + 人 + of / about + 物。目的語を2つ並べられない。of か about が必要。",
+      ex:"I would like to inform you of three points." },
+    { id:"B-8", cat:"前置詞", topic:"手紙: 病気の友人へ", ctx:"手紙の最後。「また学校に戻ってきてね」と励ます場面。",
+      wrong:"you will come back a school again", right:"you will come back to school again",
+      why:"「〜へ戻る」は come back to + 場所。さらに school は go/come back to school で無冠詞（a も the も付けない）。",
+      ex:"I hope you will come back to school soon." },
+    { id:"B-9", cat:"前置詞", topic:"手紙: 病気の友人へ", ctx:"「その結果を“次のミーティングで”共有します」と言う場面。",
+      wrong:"share that result in next meeting", right:"share the results at the next meeting",
+      why:"会議・集まりの“場”は at the meeting（in ではなく at）。次回なので the next meeting と the も必要。",
+      ex:"We will present our results at the next meeting." },
+    { id:"C-7", cat:"冠詞", topic:"手紙: 病気の友人へ", ctx:"今日の作業報告。「（自分たちが使った）顕微鏡の精度を検証した」と言う場面。",
+      wrong:"the accuracy of microscope", right:"the accuracy of the microscope",
+      why:"自分たちが使った特定の顕微鏡なので the。可算単数名詞 microscope には冠詞が必須（無冠詞では置けない）。",
+      ex:"We tested the accuracy of the microscope." },
+    { id:"D-9", cat:"コロケーション", topic:"手紙: 病気の友人へ", ctx:"検証で得た“結果・成果”を次回共有すると伝える場面。",
+      wrong:"We are going to share that consequence", right:"We are going to share the results / our findings",
+      why:"consequence は「（悪い）結果・報い」の意味。研究や実験の「結果・成果」は result(s) / findings を使う。",
+      ex:"We are going to share our findings at the next meeting." },
+    { id:"D-10", cat:"コロケーション", topic:"手紙: 病気の友人へ", ctx:"課題を挙げ終えて「これが私たちの課題です」とまとめる場面。",
+      wrong:"This is our assignments", right:"These are our assignments",
+      why:"assignments（複数）が主語 → These are。指示語・be動詞・名詞の“単複”をそろえる（最重要の弱点TOP1）。",
+      ex:"These are the tasks we need to finish before next week." },
+    { id:"D-11", cat:"コロケーション", topic:"手紙: 親しい友人への結び", ctx:"親しい友人あて（Dear friend）のカジュアルな手紙の“結びの言葉”を書く場面。",
+      wrong:"Sincerely,", right:"Best wishes, / Take care,",
+      why:"Sincerely はビジネス寄りで少し硬い。友人あてのカジュアルな手紙は Best wishes / Take care / Your friend で締めるのが自然。",
+      ex:"Take care, and see you soon! Best wishes, Kaito" }
   ],
 
   top5: [
@@ -155,6 +189,8 @@ window.IELTS_DATA = {
     { title:"Essay 4 — Facebook users (Task 1)",
       after:"The two pie charts compare the age distribution of Facebook users in 2005 and 2015. In 2005, users aged 13–24 made up the largest group at 51%, whereas in 2015 this figure fell to 31%, and users aged 25–40 became the largest group at 47%. Interestingly, in both years people aged 66–80 used Facebook the least. In more detail, in 2005 the age groups accounted for 51% (13–24), 32% (25–40), 16% (41–65) and 1% (66–80). In 2015, the figures were 31%, 47%, 19% and 3% respectively." },
     { title:"Essay 5 — Application letter",
-      after:"Dear Sir or Madam, My name is Kaito, and I am writing from Japan. I became curious about your school after seeing its advertisement. I graduated from graduate school in Japan, where I studied IT, so I am able to teach programming and IT. In addition, I have recently been developing a mobile application, which means I am well suited to teaching IT to children who are interested in the field. I look forward to hearing from you. Yours faithfully, Kaito" }
+      after:"Dear Sir or Madam, My name is Kaito, and I am writing from Japan. I became curious about your school after seeing its advertisement. I graduated from graduate school in Japan, where I studied IT, so I am able to teach programming and IT. In addition, I have recently been developing a mobile application, which means I am well suited to teaching IT to children who are interested in the field. I look forward to hearing from you. Yours faithfully, Kaito" },
+    { title:"Essay 6 — 病気の友人への研究連絡の手紙",
+      after:"Dear friend, Hello! How are you? I heard that you are sick, and I am worried about you. As the leader of our science project, I would like to inform you of three things: what we did in today's group work, our plan for the next meeting, and the assignments for it. First, in today's group work, we validated the accuracy of the microscope. As you know, we had collected some data, and we used it for this validation. We will share the results at the next meeting. Second, at the next meeting, we are going to have a discussion and share the data we have collected. Lastly, the assignment for the next meeting is to read and analyse the collected data. These are our tasks. I hope you will come back to school soon. Take care, and see you later! Best wishes, Kaito" }
   ]
 };

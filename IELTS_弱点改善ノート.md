@@ -251,6 +251,38 @@ IELTSの採点4項目のうち、あなたが今 **落としているのは Gram
 > **Yours faithfully,**
 > Kaito
 
+### Essay 6 — 病気の友人への研究連絡の手紙
+> **After（模範）**
+> Dear friend,
+>
+> Hello! How are you? I heard that you are sick, and I am **worried** about you.
+>
+> As the leader of our science project, I would like to **inform you of** three things: what we did in today's group work, our plan for the next meeting, and the assignments for it.
+>
+> First, in today's group work, we **validated the accuracy of the microscope**. As you know, we had collected some data, and we used it for this validation. We will **share the results at the next meeting**.
+>
+> Second, **at the next meeting**, we are going to have a discussion and share the data we have collected.
+>
+> Lastly, the assignment for the next meeting is to read and analyse the collected data. **These are** our tasks.
+>
+> I hope you will **come back to school** soon. Take care, and see you later!
+>
+> **Best wishes,**
+> Kaito
+
+**この手紙の新しいミス（8項目・アプリ/PDFに収録）**
+
+| ID | カテゴリ | ❌誤り | ✅正しい | ポイント |
+|---|---|---|---|---|
+| A-7 | 品詞 | I am worry about you | I am **worried** about you | 状態は形容詞 worried |
+| B-7 | 前置詞 | inform you three items | inform you **of** three things | inform 人 **of/about** 物 |
+| B-8 | 前置詞 | come back a school | come back **to** school | come back **to** + 場所（school は無冠詞） |
+| B-9 | 前置詞 | in next meeting | **at the** next meeting | 会議は **at**、次回は **the** |
+| C-7 | 冠詞 | accuracy of microscope | accuracy of **the** microscope | 特定の可算単数に the |
+| D-9 | コロケーション | share that consequence | share the **results / findings** | consequence は「悪い結果」 |
+| D-10 | コロケーション | This is our assignments | **These are** our assignments | 単複・主語一致（最重要弱点） |
+| D-11 | コロケーション | Sincerely,（友人あて） | **Best wishes, / Take care,** | 親しい相手はカジュアルな結び |
+
 ---
 
 ## 4. あなたが特に苦手なポイント TOP5
