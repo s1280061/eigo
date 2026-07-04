@@ -145,12 +145,17 @@ async def tts_mixed(text):
     audio = sil(1)
     for lang, t in parts:
         t = t.strip()
-        if not t: continue
-        # 1〜2文字だけの英字（記号の断片等）は日本語音声に回す
+        # 記号のみ（読める文字が無い）断片はスキップ。これを読ませると edge-tts が NoAudioReceived で落ちる
+        if not re.search(r"[0-9A-Za-z぀-ヿ一-鿿]", t):
+            continue
         if lang == "en" and len(re.sub(r"[^A-Za-z]", "", t)) >= 2:
-            audio += await tts(t, EN_VOICE, EN_RATE)
+            voice, rate = EN_VOICE, EN_RATE
         else:
-            audio += await tts(t, JA_VOICE)
+            voice, rate = JA_VOICE, "+0%"
+        try:
+            audio += await tts(t, voice, rate)
+        except Exception:
+            pass  # 念のため：どれか1断片が失敗しても全体は止めない
         audio += sil(80)
     return audio
 
