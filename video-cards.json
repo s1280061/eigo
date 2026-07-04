@@ -1,0 +1,478 @@
+{
+  "updated": "2026-07-04",
+  "title": "IELTS 弱点カード復習",
+  "groups": [
+    {
+      "cat": "品詞",
+      "catEn": "Word Form",
+      "color": "#2f7de1",
+      "file": "1_WordForm",
+      "slides": [
+        {
+          "id": "1",
+          "topic": "手紙: 病気の友人へ",
+          "wrong": "I am worry about you",
+          "right": "I am worried about you",
+          "why": "worry は動詞（心配する）。「心配している」という“状態”は形容詞 worried。be動詞 + worried + about。",
+          "ex": "I am worried about your health. I hope you get well soon.",
+          "ctx": "体調を崩した友人を気づかう場面。「あなたのことが心配です」。"
+        },
+        {
+          "id": "7",
+          "topic": "Task2: グローバル化",
+          "wrong": "you can do communication easily",
+          "right": "you can communicate easily",
+          "why": "communication（名詞）を do で動詞化しない。「意思疎通する」は動詞 communicate 一語で表す。",
+          "ex": "Globalisation allows us to communicate easily across borders.",
+          "ctx": "グローバル化の利点。「簡単に意思疎通できる」と言いたい場面。"
+        },
+        {
+          "id": "8",
+          "topic": "Task2: グローバル化",
+          "wrong": "you can do task faster",
+          "right": "you can complete tasks more quickly",
+          "why": "動詞は complete / carry out。task は可算名詞で複数 tasks。副詞は faster より more quickly が自然。",
+          "ex": "We can complete tasks more quickly thanks to technology.",
+          "ctx": "同じく利点。「作業を速くこなせる」と続けたい場面。"
+        },
+        {
+          "id": "12",
+          "topic": "Task2: グローバル化",
+          "wrong": "at risk of dissapperment",
+          "right": "at risk of disappearance / disappearing",
+          "why": "名詞は disappearance、動名詞は disappearing。dissapperment という語は存在しない。",
+          "ex": "Many languages are at risk of disappearance.",
+          "ctx": "地方文化・言語が「消滅」しかねないと述べる場面。"
+        },
+        {
+          "id": "18",
+          "topic": "Task2: 結論の書き出し",
+          "wrong": "In summarization",
+          "right": "In summary / To summarise",
+          "why": "まとめの合図は In summary / To conclude。summarization（要約という行為）は使わない。",
+          "ex": "In summary, globalisation has both benefits and drawbacks.",
+          "ctx": "最終段落。「まとめると」と結論を書き始める場面。"
+        },
+        {
+          "id": "44",
+          "topic": "手紙: 塾への応募",
+          "wrong": "I have graduated from graduated school",
+          "right": "I graduated from graduate school",
+          "why": "「大学院」は graduate school。過去の一度きりの事実は過去形 graduated（現在完了は不要）。",
+          "ex": "I graduated from graduate school, where I studied IT.",
+          "ctx": "経歴として「大学院を卒業した」と述べる場面。"
+        }
+      ]
+    },
+    {
+      "cat": "前置詞",
+      "catEn": "Prepositions",
+      "color": "#d98a00",
+      "file": "2_Prepositions",
+      "slides": [
+        {
+          "id": "2",
+          "topic": "手紙: 病気の友人へ",
+          "wrong": "I would like to inform you three items",
+          "right": "I would like to inform you of three items",
+          "why": "inform は inform + 人 + of / about + 物。目的語を2つ並べられず、of（または about）が必要。",
+          "ex": "I would like to inform you of three points.",
+          "ctx": "本題の切り出し。「3点お知らせします」と伝える場面。"
+        },
+        {
+          "id": "3",
+          "topic": "手紙: 病気の友人へ",
+          "wrong": "come back a school again",
+          "right": "come back to school again",
+          "why": "「〜へ戻る」は come back to + 場所。school は go / come back to school で無冠詞（a を付けない）。",
+          "ex": "I hope you will come back to school soon.",
+          "ctx": "手紙の最後。「また学校に戻ってきてね」と励ます場面。"
+        },
+        {
+          "id": "9",
+          "topic": "Task2: グローバル化",
+          "wrong": "we can communicate each other",
+          "right": "we can communicate with each other",
+          "why": "communicate は自動詞。相手を示すには with が必要。",
+          "ex": "People from different countries can communicate with each other instantly.",
+          "ctx": "「お互いに意思疎通できる」と言う場面。"
+        },
+        {
+          "id": "11",
+          "topic": "Task2: グローバル化",
+          "wrong": "may be in risk of",
+          "right": "may be at risk of",
+          "why": "「〜の危機にある」は固定表現 at risk (of)。in risk とは言わない。",
+          "ex": "Local traditions are at risk of being lost.",
+          "ctx": "地方文化が「消滅の危機にある」と言う場面。"
+        },
+        {
+          "id": "13",
+          "topic": "Task2: グローバル化",
+          "wrong": "I have heard of that bad points",
+          "right": "I have heard about these drawbacks",
+          "why": "この文構造では heard about が自然。heard of は「〜の存在を知っている」の意味で用途が違う。",
+          "ex": "I have heard about these drawbacks from friends abroad.",
+          "ctx": "具体例の導入。「こうした欠点を聞いたことがある」場面。"
+        },
+        {
+          "id": "14",
+          "topic": "Task2: グローバル化",
+          "wrong": "people who lives Africa",
+          "right": "people who live in Africa",
+          "why": "「〜に住む」は live in + 地名。people は複数なので動詞は live。",
+          "ex": "People who live in Africa shared their experiences online.",
+          "ctx": "「アフリカに住む人から聞いた」と例示する場面。"
+        },
+        {
+          "id": "17",
+          "topic": "Task2: グローバル化",
+          "wrong": "attributed from globalisation",
+          "right": "attributed to globalisation",
+          "why": "「〜に起因する」は attribute A to B。from は不可。",
+          "ex": "Rising inequality is often attributed to globalisation.",
+          "ctx": "問題の原因をグローバル化に帰す場面。"
+        },
+        {
+          "id": "21",
+          "topic": "Task2: グローバル化",
+          "wrong": "the opportunities of interaction of other people",
+          "right": "opportunities for interaction with other people",
+          "why": "opportunities for（〜の機会）、interaction with（〜との交流）。どちらも決まった前置詞。",
+          "ex": "Globalisation increases opportunities for interaction with people worldwide.",
+          "ctx": "「他者と交流する機会が増える」と述べる場面。"
+        },
+        {
+          "id": "28",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "developed by adapting immigration",
+          "right": "has developed by adapting to immigration",
+          "why": "adapt to（〜に適応する）。to が必要。過去から現在まで続くので現在完了 has developed。",
+          "ex": "The nation has developed by adapting to immigration.",
+          "ctx": "「移民に適応して発展してきた」と述べる場面。"
+        },
+        {
+          "id": "43",
+          "topic": "手紙: 塾への応募",
+          "wrong": "I am curious your cram school seeing its advertisement",
+          "right": "I became curious about your cram school after seeing its advertisement",
+          "why": "curious about（〜に興味）。「広告を見て“から”」は after seeing。become で「興味を持ち始めた」。",
+          "ex": "I became curious about your school after seeing the advertisement.",
+          "ctx": "「広告を見て興味を持った」と伝える場面。"
+        },
+        {
+          "id": "45",
+          "topic": "手紙: 塾への応募",
+          "wrong": "studying about IT",
+          "right": "studying IT",
+          "why": "study は他動詞で目的語を直接とる。about は不要。",
+          "ex": "I studied IT at graduate school.",
+          "ctx": "「ITを学んだ」と専攻を述べる場面。"
+        }
+      ]
+    },
+    {
+      "cat": "冠詞",
+      "catEn": "Articles",
+      "color": "#1f9d63",
+      "file": "3_Articles",
+      "slides": [
+        {
+          "id": "4",
+          "topic": "手紙: 病気の友人へ",
+          "wrong": "share that consequence in next meeting",
+          "right": "share the results in the next meeting",
+          "why": "特定の次回会合なので the next meeting。結果も自分たちのその結果なので the results。可算名詞には冠詞が必要。",
+          "ex": "We will share the results in the next meeting.",
+          "ctx": "検証結果を「次のミーティングで共有する」と述べる場面。"
+        },
+        {
+          "id": "19",
+          "topic": "Task2: グローバル化",
+          "wrong": "if we have the globalisation",
+          "right": "if we promote globalisation",
+          "why": "globalisation は抽象・一般概念なので無冠詞。動詞も have より promote が自然。",
+          "ex": "If we promote globalisation, ideas spread faster.",
+          "ctx": "「グローバル化を進めれば」と一般論で語り出す場面。"
+        },
+        {
+          "id": "23",
+          "topic": "Task2: グローバル化",
+          "wrong": "That is a best idea",
+          "right": "That is the best idea",
+          "why": "最上級には the を付ける（the best / the largest）。",
+          "ex": "That is the best idea I have come up with.",
+          "ctx": "自分の考えを「一番良い案だ」と述べる場面。"
+        },
+        {
+          "id": "26",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "It would be United States of America",
+          "right": "It would be the United States of America",
+          "why": "複数形を含む国名には the（the United States, the Netherlands, the Philippines）。",
+          "ex": "The United States has long been a nation of immigrants.",
+          "ctx": "回答の書き出しで国名を挙げる場面。"
+        },
+        {
+          "id": "29",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "Recent situation in U.S is unknown",
+          "right": "The recent situation in the U.S. is unclear to me",
+          "why": "特定の状況なので the。国名は the U.S.。unknown より unclear to me が自然。",
+          "ex": "The recent situation in the U.S. is unclear to me.",
+          "ctx": "「最近の米国の状況はよく分からない」と述べる場面。"
+        },
+        {
+          "id": "31",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "who is born in diffrerent country",
+          "right": "who was born in a different country",
+          "why": "可算名詞 country に a。「生まれた」は過去の受動 was born。",
+          "ex": "Elon Musk was born in a different country, South Africa.",
+          "ctx": "多文化の具体例（イーロン・マスク）を挙げる場面。"
+        },
+        {
+          "id": "46",
+          "topic": "手紙: 塾への応募",
+          "wrong": "I can teach the programming",
+          "right": "I can teach programming",
+          "why": "programming は不可算の活動名。一般論として語るときは無冠詞。",
+          "ex": "I can teach programming to beginners.",
+          "ctx": "「プログラミングを教えられる」とアピールする場面。"
+        },
+        {
+          "id": "47",
+          "topic": "手紙: 塾への応募",
+          "wrong": "developing moble application",
+          "right": "developing mobile applications",
+          "why": "スペルは mobile。一般的な「モバイルアプリ」は複数形 applications にする。",
+          "ex": "I have recently been developing mobile applications.",
+          "ctx": "「モバイルアプリを開発している」と述べる場面。"
+        }
+      ]
+    },
+    {
+      "cat": "コロケーション",
+      "catEn": "Collocations",
+      "color": "#d4488a",
+      "file": "4_Collocations",
+      "slides": [
+        {
+          "id": "5",
+          "topic": "手紙: 病気の友人へ",
+          "wrong": "share that consequence",
+          "right": "share the results / our findings",
+          "why": "consequence は「（悪い）結果・報い」の意味。研究や実験の「結果・成果」は result(s) / findings を使う。",
+          "ex": "We are going to share our findings next time.",
+          "ctx": "検証で得た“成果”を共有すると伝える場面。"
+        },
+        {
+          "id": "6",
+          "topic": "手紙: 病気の友人へ",
+          "wrong": "This is our assignments",
+          "right": "These are our assignments",
+          "why": "assignments（複数）が主語 → These are。指示語・be動詞・名詞の“単複”をそろえる（最重要弱点）。※模範では冗長として削除も可。",
+          "ex": "These are the tasks we must finish before next week.",
+          "ctx": "課題を挙げ終えて「これが私たちの課題です」とまとめる場面。"
+        },
+        {
+          "id": "10",
+          "topic": "Task2: グローバル化",
+          "wrong": "people who have the global style",
+          "right": "people who have a global mindset",
+          "why": "the global style は曖昧。「国際的な考え方を持つ人」は a global mindset が自然。",
+          "ex": "People with a global mindset adapt quickly to new cultures.",
+          "ctx": "「グローバルな考えを持つ人と関われば」と述べる場面。"
+        },
+        {
+          "id": "15",
+          "topic": "Task2: グローバル化",
+          "wrong": "the number of languages are decreasing as time goes by",
+          "right": "the number of languages is decreasing over time",
+          "why": "主語の中心は the number（単数）→ is。「時間とともに」は over time が自然。",
+          "ex": "The number of endangered languages is decreasing over time.",
+          "ctx": "統計を根拠に「言語数が年々減っている」と述べる場面。"
+        },
+        {
+          "id": "16",
+          "topic": "Task2: グローバル化",
+          "wrong": "one of the problem",
+          "right": "one of the problems",
+          "why": "one of the + 複数名詞。「〜のうちの1つ」は必ず複数形。",
+          "ex": "This is one of the problems caused by globalisation.",
+          "ctx": "「これもグローバル化の問題の一つだ」とまとめる場面。"
+        },
+        {
+          "id": "20",
+          "topic": "Task2: グローバル化",
+          "wrong": "if we accelerate more globalization",
+          "right": "if we further accelerate globalisation",
+          "why": "「さらに加速する」は further accelerate。accelerate more は不自然。",
+          "ex": "If we further accelerate globalisation, cooperation will grow.",
+          "ctx": "「グローバル化をさらに進めれば」と述べる場面。"
+        },
+        {
+          "id": "22",
+          "topic": "Task2: グローバル化",
+          "wrong": "is going to be increasing",
+          "right": "will increase",
+          "why": "未来の増加は will increase で十分。is going to be increasing は冗長・不自然。",
+          "ex": "Opportunities for interaction will increase due to globalisation.",
+          "ctx": "交流機会が「増えるだろう」と予測する場面。"
+        },
+        {
+          "id": "24",
+          "topic": "Task2: グローバル化",
+          "wrong": "we better do not declare and accelerate",
+          "right": "we should not continue to promote and accelerate",
+          "why": "助言は should / had better。we better do not は語順が壊れている。",
+          "ex": "We should not accelerate globalisation without protecting local cultures.",
+          "ctx": "逆の立場で「進めるべきでない」と主張する場面。"
+        },
+        {
+          "id": "25",
+          "topic": "Task2: グローバル化",
+          "wrong": "we better do conversation ... speaking common language",
+          "right": "we should communicate ... by speaking a common language",
+          "why": "do conversation は不自然。communicate / have conversations を使う。a common language と冠詞も必要。",
+          "ex": "We should communicate with the world by speaking a common language, such as English.",
+          "ctx": "「共通言語で世界と対話すべき」と提案する結びの場面。"
+        },
+        {
+          "id": "27",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "successful at multicultural in academia",
+          "right": "successful at embracing multiculturalism in academia",
+          "why": "multicultural は形容詞。名詞は multiculturalism。「多文化を受け入れる」は embrace multiculturalism。",
+          "ex": "The country is successful at embracing multiculturalism.",
+          "ctx": "アメリカの多文化での成功を説明する場面。"
+        },
+        {
+          "id": "32",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "the example of person who is succeful",
+          "right": "one example of a successful person",
+          "why": "「一例」は one example of a + 名詞。person に a が必要。",
+          "ex": "One example of a successful immigrant is Elon Musk.",
+          "ctx": "成功例を挙げる導入の場面。"
+        },
+        {
+          "id": "33",
+          "topic": "面接: 日本の人気の祭り",
+          "wrong": "The most popular festival in Japan is fireworks",
+          "right": "The most popular festival events in Japan are fireworks displays",
+          "why": "花火（fireworks）は物であり祭りそのものではない。festival events / fireworks displays と表し、複数なので are。",
+          "ex": "Some of the most popular summer events in Japan are fireworks displays.",
+          "ctx": "「日本で一番人気の祭りは花火（大会）だ」と切り出す場面。"
+        },
+        {
+          "id": "34",
+          "topic": "面接: 日本の人気の祭り",
+          "wrong": "The fireworks is held at all locations",
+          "right": "The fireworks are held at various locations",
+          "why": "fireworks は複数扱い → are。all locations（全域）は大げさで、various locations（各地）が自然。",
+          "ex": "Fireworks are held at various locations across Japan.",
+          "ctx": "「花火が各地で開催される」と説明する場面。"
+        },
+        {
+          "id": "36",
+          "topic": "面接: 日本の人気の祭り",
+          "wrong": "There are usually food stall on the site",
+          "right": "There are usually food stalls on the street",
+          "why": "屋台は複数 stalls。会場の通りは on the street（on the site は工事現場的で不自然）。",
+          "ex": "There are usually food stalls lining the street.",
+          "ctx": "「屋台が出ている」と描写する場面。"
+        },
+        {
+          "id": "37",
+          "topic": "面接: 日本の人気の祭り",
+          "wrong": "We can see fireworks eating some delicious foods",
+          "right": "We can watch the fireworks while eating delicious food",
+          "why": "予定された催しは watch。while がないと「花火が食べている」意味に。food は一般に不可算。",
+          "ex": "We can watch the fireworks while eating delicious food.",
+          "ctx": "「食べながら花火を見られる」と述べる場面。"
+        },
+        {
+          "id": "38",
+          "topic": "Task1: Facebook円グラフ",
+          "wrong": "The left circle graph",
+          "right": "The left pie chart",
+          "why": "円グラフは pie chart（circle graph ではない）。IELTS Task1 の必須用語。",
+          "ex": "The two pie charts compare the ages of Facebook users.",
+          "ctx": "円グラフを描写し始める場面。"
+        },
+        {
+          "id": "39",
+          "topic": "Task1: Facebook円グラフ",
+          "wrong": "which dominates 51% users",
+          "right": "made up 51% of users / accounted for 51%",
+          "why": "割合は make up / account for。dominate は「圧倒的多数を占める」ときだけ。",
+          "ex": "Users aged 13 to 24 made up 51% of the total.",
+          "ctx": "各年齢層の割合を述べる場面。"
+        },
+        {
+          "id": "40",
+          "topic": "Task1: Facebook円グラフ",
+          "wrong": "More details, left graph is 51%",
+          "right": "In more detail, the left chart shows 51%",
+          "why": "「詳しく見ると」は In more detail / Looking more closely。",
+          "ex": "In more detail, the youngest group made up just over half.",
+          "ctx": "概要のあと、細部の数値に入る場面。"
+        }
+      ]
+    },
+    {
+      "cat": "文構造",
+      "catEn": "Sentence Structure",
+      "color": "#7c53e0",
+      "file": "5_SentenceStructure",
+      "slides": [
+        {
+          "id": "30",
+          "topic": "会話: 多文化の成功例(米国)",
+          "wrong": "I do not know Presdient Trump thinks",
+          "right": "I do not know what President Trump thinks",
+          "why": "know の後に節を続けるには what が必要（know + what + 主語 + 動詞）。",
+          "ex": "I do not know what the government thinks about this issue.",
+          "ctx": "「トランプ大統領が何を考えているか分からない」と述べる場面。"
+        },
+        {
+          "id": "35",
+          "topic": "面接: 日本の人気の祭り",
+          "wrong": "even if there are rual area",
+          "right": "even in rural areas",
+          "why": "スペルは rural。even if there are は文構造が崩れる。even in rural areas で場所を自然につなぐ。",
+          "ex": "Fireworks are held everywhere, even in rural areas.",
+          "ctx": "「田舎でも開催される」と補足する場面。"
+        },
+        {
+          "id": "41",
+          "topic": "Task1: Facebook円グラフ",
+          "wrong": "aged for 66 to 80 people use less this Facebook",
+          "right": "people aged 66 to 80 used Facebook the least",
+          "why": "年齢は people aged 66 to 80（for は不要）。過去データなので used。語順は people aged ... used Facebook。",
+          "ex": "People aged 66 to 80 used Facebook the least.",
+          "ctx": "「66〜80歳の利用が最も少ない」と述べる場面。"
+        },
+        {
+          "id": "42",
+          "topic": "手紙: 塾への応募",
+          "wrong": "I am Kaito from Japan who am intersted",
+          "right": "I am Kaito from Japan, and I am interested",
+          "why": "who am は不可。自分のことは I を主語に and I am interested と続ける。",
+          "ex": "My name is Kaito, and I am interested in your school.",
+          "ctx": "自己紹介＋志望動機の書き出し。"
+        },
+        {
+          "id": "48",
+          "topic": "手紙: 塾への応募",
+          "wrong": "I can suitable for teaching",
+          "right": "I am suitable / well qualified for teaching",
+          "why": "suitable は形容詞なので be動詞が必要（can は不可）。I am suitable for + 名詞。",
+          "ex": "I am well suited to teaching IT to children.",
+          "ctx": "「ITを教えるのに適任」とアピールする場面。"
+        }
+      ]
+    }
+  ]
+}

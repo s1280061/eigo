@@ -6,4 +6,4 @@ video/audio/
 video/clips/
 video/*.mp4
 video/_slide.html
-video/concat.txt
+video/concat*.txt

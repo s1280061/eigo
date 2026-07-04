@@ -1,32 +1,41 @@
-# 🎬 解説動画: ネイティブの音の変化 12選（English Reductions）
+# 🎬 解説動画: IELTS 弱点カード復習（カテゴリ別）
 
-`video-content.json` から自動生成した解説動画です。各フレーズを **英文（音が変わる箇所に下線）→ 赤字で崩れた発音 → 日本語訳 → 💡解説** の順でスライド表示し、
-**英語ナレーション（2回）＋日本語ナレーション**が付きます。
+アプリの「カード」「クイズ」と同じ48項目を、送ってもらった画像のデザインで動画化したものです。
+`data.js`（弱点カード）から自動生成しています。
 
-## 出力
-- `English_Reductions_12.mp4` … 本編（1280×720 / タイトル＋12フレーズ）
+## 出力（カテゴリ別に5本）
+| ファイル | 内容 | 問題数 |
+|---|---|---|
+| `IELTS_1_WordForm.mp4` | 品詞 | 6 |
+| `IELTS_2_Prepositions.mp4` | 前置詞 | 11 |
+| `IELTS_3_Articles.mp4` | 冠詞 | 8 |
+| `IELTS_4_Collocations.mp4` | コロケーション | 18 |
+| `IELTS_5_SentenceStructure.mp4` | 文構造 | 5 |
 
-## 収録フレーズ
-Wouldja / wanna / gonna / gotta / didja / whatcha / lemme / gimme / doncha / kinda / outta / cuz
+## 1カードの画面（画像デザインを踏襲）
+- 上部: カテゴリのタグ ＋ 場面（トピック）＋ 進捗
+- **❌ 誤り**（グレーの取り消し線）
+- **✅ 正しい**（大きな黒字。直した箇所を**赤下線**で自動ハイライト）
+- **📍 場面**（青字の日本語）
+- **💡 解説**ボックス（なぜ間違いか ＋ 📝 例文）
 
-## 構成（1フレーズあたり）
-1. 英文を読み上げ（少しゆっくり）
+## 1カードの音声
+1. 例文を英語で読み上げ（少しゆっくり）
 2. 0.5秒あけてもう一度
-3. 日本語訳を読み上げ
-4. 約3秒の間（画面の💡解説を読む時間）
+3. 日本語で解説（なぜ間違いか）
+4. 約2.5秒の間（画面を読む時間）
 
 ## 作り直し方
 ```bash
-python build-video.py slides   # スライド画像だけ再生成（見た目調整用）
-python build-video.py audio    # 音声だけ再生成（声・速度変更用）
-python build-video.py all      # 全部（スライド＋音声＋MP4結合）
+node build-video-content.js      # data.js → video-cards.json
+python build-video.py slides     # スライドだけ（見た目調整）
+python build-video.py audio      # 音声だけ（声・速度変更）
+python build-video.py all        # 全部（5本のMP4を生成）
+python build-video.py all 4      # カテゴリ4(コロケーション)だけ生成
 ```
 
-- 声の変更は `build-video.py` 上部の `EN_VOICE` / `JA_VOICE` / `EN_RATE` を編集
-  - 例: `EN_VOICE = "en-GB-SoniaNeural"`（英国発音）, `EN_RATE = "-10%"`（もっとゆっくり）
-- フレーズの追加・修正は `video-content.json` を編集するだけ
+- 声・速度: `build-video.py` 上部の `EN_VOICE` / `JA_VOICE` / `EN_RATE`
+- 内容: `data.js` を編集すれば、アプリ・PDF・ノート・動画すべてに反映
 
-## 素材
-- `slides/` … 各スライドPNG
-- `audio/` … 各スライドの音声MP3
-- `clips/` … 各スライドの動画クリップ（結合前）
+## 素材フォルダ
+- `slides/` スライドPNG ／ `audio/` 音声MP3 ／ `clips/` 結合前クリップ

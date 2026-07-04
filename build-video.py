@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-# video-content.json から解説動画(MP4)を生成する
+# video-cards.json から「弱点カード復習」動画(MP4)をカテゴリ別に生成する
 #   スライド: Chrome headless スクショ / 音声: edge-tts(英+日) / 結合: ffmpeg
-# 使い方: python build-video.py [slides|audio|all]
-import os, sys, json, asyncio, subprocess, tempfile, html, pathlib
+# 使い方: python build-video.py [slides|audio|all] [カテゴリ番号(1-5, 省略で全部)]
+import os, re, sys, json, asyncio, subprocess, tempfile, html, pathlib
 import edge_tts
 from pydub import AudioSegment
 
@@ -19,54 +19,80 @@ EN_VOICE = "en-US-JennyNeural"
 JA_VOICE = "ja-JP-NanamiNeural"
 EN_RATE = "-6%"
 
-with open(os.path.join(BASE, "video-content.json"), encoding="utf-8") as f:
+with open(os.path.join(BASE, "video-cards.json"), encoding="utf-8") as f:
     C = json.load(f)
 
-def slide_html(title=None, subtitle=None, s=None):
-    if title is not None:
-        body = f"""
-        <div class="title-wrap">
-          <div class="big-title">{html.escape(title)}</div>
-          <div class="sub">{html.escape(subtitle or '')}</div>
-        </div>"""
-    else:
-        en = html.escape(s["en"])
-        u = html.escape(s["underline"])
-        en_u = en.replace(u, f'<u>{u}</u>', 1)
-        body = f"""
-        <div class="brand">English Reductions</div>
-        <div class="wrap">
-          <div class="en">{en_u}</div>
-          <div class="reduction">「{html.escape(s['underline'])}」 → <span class="red">({html.escape(s['reduction'])})</span></div>
-          <div class="ja">{html.escape(s['ja'])}</div>
-          <div class="kaisetsu"><span class="k-label">💡 解説</span>{html.escape(s['kaisetsu'])}</div>
-        </div>"""
-    return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+# ---- 差分ハイライト: right の中で wrong に無い語を赤下線にする ----
+def _norm(w): return re.sub(r"[^0-9a-zA-Z]", "", w).lower()
+def highlight(wrong, right):
+    wset = set(_norm(w) for w in wrong.split() if _norm(w))
+    out = []
+    for w in right.split():
+        n = _norm(w)
+        if n and n not in wset:
+            out.append(f'<span class="hl">{html.escape(w)}</span>')
+        else:
+            out.append(html.escape(w))
+    return " ".join(out)
+
+def title_html(g):
+    return f"""<!DOCTYPE html><html><head><meta charset="utf-8">{_css(g['color'])}</head><body>
+    <div class="deco1"></div><div class="deco2"></div><div class="deco3" style="background:{g['color']}22"></div>
+    <div class="title-wrap">
+      <div class="cat-pill" style="background:{g['color']}">{html.escape(g['catEn'])}</div>
+      <div class="big-title">{html.escape(g['cat'])}</div>
+      <div class="sub">IELTS 弱点カード復習 ・ 全{len(g['slides'])}問</div>
+    </div></body></html>"""
+
+def card_html(g, s, idx, total):
+    return f"""<!DOCTYPE html><html><head><meta charset="utf-8">{_css(g['color'])}</head><body>
+    <div class="deco1"></div><div class="deco2"></div><div class="deco3" style="background:{g['color']}22"></div>
+    <div class="brand">IELTS 弱点カード</div>
+    <div class="head">
+      <span class="cat-pill sm" style="background:{g['color']}">{html.escape(g['cat'])}</span>
+      <span class="topic">{html.escape(s['topic'])}</span>
+      <span class="count">{idx} / {total}</span>
+    </div>
+    <div class="wrap">
+      <div class="wrong">&#10060; {html.escape(s['wrong'])}</div>
+      <div class="right">&#9989; {highlight(s['wrong'], s['right'])}</div>
+      <div class="ctx">&#128205; {html.escape(s['ctx'])}</div>
+      <div class="kaisetsu">
+        <div class="k-why"><span class="k-label" style="color:{g['color']}">&#128161; 解説</span>{html.escape(s['why'])}</div>
+        <div class="k-ex">&#128221; {html.escape(s['ex'])}</div>
+      </div>
+    </div></body></html>"""
+
+def _css(color):
+    return f"""<style>
 *{{margin:0;padding:0;box-sizing:border-box;}}
 html,body{{width:1280px;height:720px;overflow:hidden;background:#fff;
-  font-family:"Segoe UI","Yu Gothic","Meiryo",sans-serif;color:#111;}}
+  font-family:"Segoe UI","Yu Gothic","Meiryo",sans-serif;color:#141414;}}
 .deco1,.deco2,.deco3{{position:absolute;background:#eef1f6;transform:rotate(-20deg);border-radius:6px;}}
-.deco1{{width:520px;height:70px;top:-20px;right:-80px;}}
-.deco2{{width:360px;height:34px;top:60px;right:60px;background:#f4f6fa;}}
-.deco3{{width:140px;height:14px;top:34px;right:360px;background:#e3ecff;}}
-.brand{{position:absolute;top:22px;right:34px;color:#c9d2e0;font-size:16px;font-weight:600;letter-spacing:.5px;}}
-.wrap{{position:absolute;top:96px;left:80px;right:80px;}}
-.en{{font-size:60px;font-weight:800;line-height:1.18;color:#141414;}}
-.en u{{text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:8px;}}
-.reduction{{margin-top:18px;font-size:30px;font-weight:700;color:#333;}}
-.reduction .red{{color:#d81f1f;}}
-.ja{{position:absolute;top:398px;left:80px;right:80px;font-size:42px;font-weight:800;color:#1731c8;}}
-.kaisetsu{{position:absolute;top:486px;left:80px;right:80px;background:#f1f4f9;border-left:8px solid #1731c8;
-  border-radius:10px;padding:20px 26px;font-size:24px;line-height:1.5;color:#2a2a2a;font-weight:500;}}
-.kaisetsu .k-label{{display:inline-block;color:#1731c8;font-weight:800;margin-right:10px;}}
+.deco1{{width:520px;height:70px;top:-24px;right:-90px;}}
+.deco2{{width:360px;height:34px;top:56px;right:60px;background:#f4f6fa;}}
+.deco3{{width:150px;height:14px;top:32px;right:360px;}}
+.brand{{position:absolute;top:20px;right:34px;color:#c9d2e0;font-size:15px;font-weight:600;}}
+.head{{position:absolute;top:40px;left:80px;right:80px;display:flex;align-items:center;gap:16px;}}
+.cat-pill{{color:#fff;font-weight:800;border-radius:999px;padding:6px 18px;font-size:20px;}}
+.cat-pill.sm{{font-size:17px;padding:4px 14px;}}
+.head .topic{{color:#5b6472;font-size:20px;font-weight:600;}}
+.head .count{{margin-left:auto;color:#aab3c0;font-size:18px;font-weight:700;}}
+.wrap{{position:absolute;top:104px;left:80px;right:80px;}}
+.wrong{{font-size:34px;font-weight:700;color:#9aa4b2;text-decoration:line-through;text-decoration-color:#d98a8a;}}
+.right{{margin-top:14px;font-size:52px;font-weight:800;color:#141414;line-height:1.15;}}
+.right .hl{{color:#d81f1f;text-decoration:underline;text-decoration-thickness:5px;text-underline-offset:7px;}}
+.ctx{{position:absolute;top:326px;left:80px;right:80px;font-size:30px;font-weight:800;color:#1731c8;line-height:1.4;}}
+.kaisetsu{{position:absolute;top:452px;left:80px;right:80px;background:#f1f4f9;border-left:8px solid {color};
+  border-radius:10px;padding:18px 24px;font-size:23px;line-height:1.5;color:#2a2a2a;}}
+.kaisetsu .k-label{{font-weight:800;margin-right:10px;}}
+.kaisetsu .k-ex{{margin-top:8px;color:#4a5568;font-style:italic;font-size:21px;}}
 .title-wrap{{position:absolute;top:0;left:0;width:1280px;height:720px;display:flex;flex-direction:column;
   align-items:center;justify-content:center;}}
-.big-title{{font-size:76px;font-weight:900;color:#141414;text-align:center;}}
-.sub{{margin-top:26px;font-size:34px;color:#1731c8;font-weight:700;text-align:center;}}
-</style></head><body>
-<div class="deco1"></div><div class="deco2"></div><div class="deco3"></div>
-{body}
-</body></html>"""
+.cat-pill{{margin-bottom:22px;}}
+.big-title{{font-size:88px;font-weight:900;color:#141414;text-align:center;}}
+.sub{{margin-top:22px;font-size:32px;color:#5b6472;font-weight:700;text-align:center;}}
+</style>"""
 
 def shoot(html_str, png_path):
     hp = os.path.join(VID, "_slide.html")
@@ -78,13 +104,15 @@ def shoot(html_str, png_path):
         f"--screenshot={png_path}", "--window-size=1280,720", url],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-def build_slides():
+def gkey(g): return g["file"]
+
+def build_slides(groups):
     print("slides:")
-    shoot(slide_html(title=C["title"], subtitle=C["subtitle"]), os.path.join(SLIDES, "slide_00.png"))
-    print("  slide_00 (title)")
-    for i, s in enumerate(C["slides"], 1):
-        shoot(slide_html(s=s), os.path.join(SLIDES, f"slide_{i:02d}.png"))
-        print(f"  slide_{i:02d}  {s['reduction']}")
+    for g in groups:
+        shoot(title_html(g), os.path.join(SLIDES, f"{gkey(g)}_00.png"))
+        for i, s in enumerate(g["slides"], 1):
+            shoot(card_html(g, s, i, len(g["slides"])), os.path.join(SLIDES, f"{gkey(g)}_{i:02d}.png"))
+        print(f"  {g['cat']}: {len(g['slides'])+1} slides")
 
 # ---------- audio ----------
 _tmp = tempfile.mkdtemp(prefix="vid_tts_")
@@ -96,19 +124,17 @@ async def tts(text, voice, rate="+0%"):
     return AudioSegment.from_file(p, format="mp3")
 def sil(ms): return AudioSegment.silent(duration=ms)
 
-async def build_audio():
+async def build_audio(groups):
     print("audio:")
-    # title
-    a = await tts("Native English reductions. Twelve common phrases.", EN_VOICE, EN_RATE)
-    a += sil(400) + await tts("ネイティブがよく使う音の変化を、12フレーズで練習しましょう。", JA_VOICE)
-    a += sil(800)
-    a.export(os.path.join(ACLIPS, "slide_00.mp3"), format="mp3", bitrate="128k")
-    print("  slide_00 (title)")
-    for i, s in enumerate(C["slides"], 1):
-        en = await tts(s["en"], EN_VOICE, EN_RATE)
-        seg = en + sil(500) + en + sil(700) + await tts(s["ja"], JA_VOICE) + sil(3000)
-        seg.export(os.path.join(ACLIPS, f"slide_{i:02d}.mp3"), format="mp3", bitrate="128k")
-        print(f"  slide_{i:02d}  ({len(seg)/1000:.0f}s)")
+    for g in groups:
+        # title
+        a = await tts(f"{g['catEn']}.", EN_VOICE, EN_RATE) + sil(300) + await tts(f"{g['cat']}の復習です。", JA_VOICE) + sil(700)
+        a.export(os.path.join(ACLIPS, f"{gkey(g)}_00.mp3"), format="mp3", bitrate="128k")
+        for i, s in enumerate(g["slides"], 1):
+            en = await tts(s["ex"], EN_VOICE, EN_RATE)
+            seg = en + sil(500) + en + sil(700) + await tts(s["why"], JA_VOICE) + sil(2500)
+            seg.export(os.path.join(ACLIPS, f"{gkey(g)}_{i:02d}.mp3"), format="mp3", bitrate="128k")
+        print(f"  {g['cat']}: audio done")
 
 # ---------- assemble ----------
 def make_clip(png, mp3, out):
@@ -117,28 +143,30 @@ def make_clip(png, mp3, out):
         "-pix_fmt","yuv420p","-vf","scale=1280:720,format=yuv420p","-shortest",out],
         check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-def assemble():
-    print("clips:")
-    n = len(C["slides"])
-    order = [f"{i:02d}" for i in range(0, n+1)]
-    listf = os.path.join(VID, "concat.txt")
-    with open(listf, "w", encoding="utf-8") as lf:
-        for k in order:
-            png = os.path.join(SLIDES, f"slide_{k}.png")
-            mp3 = os.path.join(ACLIPS, f"slide_{k}.mp3")
-            out = os.path.join(CLIPS, f"clip_{k}.mp4")
-            make_clip(png, mp3, out)
-            lf.write(f"file '{out.replace(chr(92),'/')}'\n")
-            print(f"  clip_{k}")
-    final = os.path.join(VID, "English_Reductions_12.mp4")
-    subprocess.run(["ffmpeg","-y","-f","concat","-safe","0","-i",listf,"-c","copy",final],
-        check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    print("DONE ->", final)
+def assemble(groups):
+    print("assemble:")
+    for g in groups:
+        listf = os.path.join(VID, f"concat_{gkey(g)}.txt")
+        with open(listf, "w", encoding="utf-8") as lf:
+            for k in range(0, len(g["slides"])+1):
+                png = os.path.join(SLIDES, f"{gkey(g)}_{k:02d}.png")
+                mp3 = os.path.join(ACLIPS, f"{gkey(g)}_{k:02d}.mp3")
+                out = os.path.join(CLIPS, f"{gkey(g)}_{k:02d}.mp4")
+                make_clip(png, mp3, out)
+                lf.write(f"file '{out.replace(chr(92),'/')}'\n")
+        final = os.path.join(VID, f"IELTS_{gkey(g)}.mp4")
+        subprocess.run(["ffmpeg","-y","-f","concat","-safe","0","-i",listf,"-c","copy",final],
+            check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print(f"  -> IELTS_{gkey(g)}.mp4")
 
 def main():
     mode = sys.argv[1] if len(sys.argv)>1 else "all"
-    if mode in ("slides","all"): build_slides()
-    if mode in ("audio","all"): asyncio.run(build_audio())
-    if mode == "all": assemble()
+    groups = C["groups"]
+    if len(sys.argv)>2:
+        idx = int(sys.argv[2]) - 1
+        groups = [C["groups"][idx]]
+    if mode in ("slides","all"): build_slides(groups)
+    if mode in ("audio","all"): asyncio.run(build_audio(groups))
+    if mode == "all": assemble(groups)
 
 main()
