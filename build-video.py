@@ -60,9 +60,12 @@ def card_html(g, s, idx, total):
       <div class="fx-wrong">&#10060; {html.escape(s['wrong'])}</div>
       <div class="fx-right">&#9989; {hl_words(s['right'], dset)}</div>
       <div class="hero">&#128266; {hl_words(s['ex'], dset)}</div>
-      <div class="ctx">&#128205; {html.escape(s['ctx'])}</div>
+      <div class="ja-trans">{html.escape(s.get('exja',''))}</div>
     </div>
-    <div class="kaisetsu"><span class="k-label" style="color:{g['color']}">&#128161; 解説</span>{html.escape(s['why'])}</div>
+    <div class="kaisetsu">
+      <div class="k-ctx">&#128205; {html.escape(s['ctx'])}</div>
+      <div class="k-why"><span class="k-label" style="color:{g['color']}">&#128161; 解説</span>{html.escape(s['why'])}</div>
+    </div>
     </body></html>"""
 
 def _css(color):
@@ -84,11 +87,12 @@ html,body{{width:1280px;height:720px;overflow:hidden;background:#fff;
 .fx-wrong{{font-size:25px;font-weight:600;color:#9aa4b2;text-decoration:line-through;text-decoration-color:#d9a0a0;}}
 .fx-right{{margin-top:6px;font-size:28px;font-weight:800;color:#3a4048;}}
 .fx-right .hl{{color:#d81f1f;}}
-.hero{{margin-top:26px;font-size:56px;font-weight:800;color:#111;line-height:1.2;}}
+.hero{{margin-top:24px;font-size:54px;font-weight:800;color:#111;line-height:1.18;}}
 .hero .hl{{color:#d81f1f;text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:8px;}}
-.ctx{{margin-top:26px;font-size:28px;font-weight:800;color:#1731c8;line-height:1.4;}}
-.kaisetsu{{position:absolute;top:520px;left:80px;right:80px;background:#f1f4f9;border-left:8px solid {color};
-  border-radius:10px;padding:18px 24px;font-size:23px;line-height:1.5;color:#2a2a2a;}}
+.ja-trans{{margin-top:16px;font-size:30px;font-weight:800;color:#1731c8;line-height:1.4;}}
+.kaisetsu{{position:absolute;top:512px;left:80px;right:80px;background:#f1f4f9;border-left:8px solid {color};
+  border-radius:10px;padding:16px 24px;font-size:22px;line-height:1.5;color:#2a2a2a;}}
+.kaisetsu .k-ctx{{color:#4a5568;font-size:21px;margin-bottom:7px;}}
 .kaisetsu .k-label{{font-weight:800;margin-right:10px;}}
 .title-wrap{{position:absolute;top:0;left:0;width:1280px;height:720px;display:flex;flex-direction:column;
   align-items:center;justify-content:center;}}

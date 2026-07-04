@@ -15,6 +15,7 @@
           "right": "I am worried about you",
           "why": "worry は動詞（心配する）。「心配している」という“状態”は形容詞 worried。be動詞 + worried + about。",
           "ex": "I am worried about your health. I hope you get well soon.",
+          "exja": "あなたの体調が心配です。早くよくなりますように。",
           "ctx": "体調を崩した友人を気づかう場面。「あなたのことが心配です」。"
         },
         {
@@ -24,6 +25,7 @@
           "right": "you can communicate easily",
           "why": "communication（名詞）を do で動詞化しない。「意思疎通する」は動詞 communicate 一語で表す。",
           "ex": "Globalisation allows us to communicate easily across borders.",
+          "exja": "グローバル化のおかげで、国境を越えて簡単に意思疎通できます。",
           "ctx": "グローバル化の利点。「簡単に意思疎通できる」と言いたい場面。"
         },
         {
@@ -33,6 +35,7 @@
           "right": "you can complete tasks more quickly",
           "why": "動詞は complete / carry out。task は可算名詞で複数 tasks。副詞は faster より more quickly が自然。",
           "ex": "We can complete tasks more quickly thanks to technology.",
+          "exja": "テクノロジーのおかげで、作業をより速く終わらせられます。",
           "ctx": "同じく利点。「作業を速くこなせる」と続けたい場面。"
         },
         {
@@ -42,6 +45,7 @@
           "right": "at risk of disappearance / disappearing",
           "why": "名詞は disappearance、動名詞は disappearing。dissapperment という語は存在しない。",
           "ex": "Many languages are at risk of disappearance.",
+          "exja": "多くの言語が消滅の危機にあります。",
           "ctx": "地方文化・言語が「消滅」しかねないと述べる場面。"
         },
         {
@@ -51,6 +55,7 @@
           "right": "In summary / To summarise",
           "why": "まとめの合図は In summary / To conclude。summarization（要約という行為）は使わない。",
           "ex": "In summary, globalisation has both benefits and drawbacks.",
+          "exja": "まとめると、グローバル化には利点と欠点の両方があります。",
           "ctx": "最終段落。「まとめると」と結論を書き始める場面。"
         },
         {
@@ -60,6 +65,7 @@
           "right": "I graduated from graduate school",
           "why": "「大学院」は graduate school。過去の一度きりの事実は過去形 graduated（現在完了は不要）。",
           "ex": "I graduated from graduate school, where I studied IT.",
+          "exja": "私は大学院を卒業し、そこでITを学びました。",
           "ctx": "経歴として「大学院を卒業した」と述べる場面。"
         }
       ]
@@ -77,6 +83,7 @@
           "right": "I would like to inform you of three items",
           "why": "inform は inform + 人 + of / about + 物。目的語を2つ並べられず、of（または about）が必要。",
           "ex": "I would like to inform you of three points.",
+          "exja": "3点お知らせしたいことがあります。",
           "ctx": "本題の切り出し。「3点お知らせします」と伝える場面。"
         },
         {
@@ -86,6 +93,7 @@
           "right": "come back to school again",
           "why": "「〜へ戻る」は come back to + 場所。school は go / come back to school で無冠詞（a を付けない）。",
           "ex": "I hope you will come back to school soon.",
+          "exja": "早く学校に戻ってこられることを願っています。",
           "ctx": "手紙の最後。「また学校に戻ってきてね」と励ます場面。"
         },
         {
@@ -95,6 +103,7 @@
           "right": "we can communicate with each other",
           "why": "communicate は自動詞。相手を示すには with が必要。",
           "ex": "People from different countries can communicate with each other instantly.",
+          "exja": "異なる国の人々が、瞬時にお互いに意思疎通できます。",
           "ctx": "「お互いに意思疎通できる」と言う場面。"
         },
         {
@@ -104,6 +113,7 @@
           "right": "may be at risk of",
           "why": "「〜の危機にある」は固定表現 at risk (of)。in risk とは言わない。",
           "ex": "Local traditions are at risk of being lost.",
+          "exja": "地元の伝統が失われる危機にあります。",
           "ctx": "地方文化が「消滅の危機にある」と言う場面。"
         },
         {
@@ -113,6 +123,7 @@
           "right": "I have heard about these drawbacks",
           "why": "この文構造では heard about が自然。heard of は「〜の存在を知っている」の意味で用途が違う。",
           "ex": "I have heard about these drawbacks from friends abroad.",
+          "exja": "私は海外の友人から、こうした欠点について聞いたことがあります。",
           "ctx": "具体例の導入。「こうした欠点を聞いたことがある」場面。"
         },
         {
@@ -122,6 +133,7 @@
           "right": "people who live in Africa",
           "why": "「〜に住む」は live in + 地名。people は複数なので動詞は live。",
           "ex": "People who live in Africa shared their experiences online.",
+          "exja": "アフリカに住む人々が、自分の経験をオンラインで共有しました。",
           "ctx": "「アフリカに住む人から聞いた」と例示する場面。"
         },
         {
@@ -131,6 +143,7 @@
           "right": "attributed to globalisation",
           "why": "「〜に起因する」は attribute A to B。from は不可。",
           "ex": "Rising inequality is often attributed to globalisation.",
+          "exja": "拡大する格差は、しばしばグローバル化に起因するとされます。",
           "ctx": "問題の原因をグローバル化に帰す場面。"
         },
         {
@@ -140,6 +153,7 @@
           "right": "opportunities for interaction with other people",
           "why": "opportunities for（〜の機会）、interaction with（〜との交流）。どちらも決まった前置詞。",
           "ex": "Globalisation increases opportunities for interaction with people worldwide.",
+          "exja": "グローバル化は、世界中の人々と交流する機会を増やします。",
           "ctx": "「他者と交流する機会が増える」と述べる場面。"
         },
         {
@@ -149,6 +163,7 @@
           "right": "has developed by adapting to immigration",
           "why": "adapt to（〜に適応する）。to が必要。過去から現在まで続くので現在完了 has developed。",
           "ex": "The nation has developed by adapting to immigration.",
+          "exja": "その国は、移民に適応しながら発展してきました。",
           "ctx": "「移民に適応して発展してきた」と述べる場面。"
         },
         {
@@ -158,6 +173,7 @@
           "right": "I became curious about your cram school after seeing its advertisement",
           "why": "curious about（〜に興味）。「広告を見て“から”」は after seeing。become で「興味を持ち始めた」。",
           "ex": "I became curious about your school after seeing the advertisement.",
+          "exja": "広告を見て、御校に興味を持ちました。",
           "ctx": "「広告を見て興味を持った」と伝える場面。"
         },
         {
@@ -167,6 +183,7 @@
           "right": "studying IT",
           "why": "study は他動詞で目的語を直接とる。about は不要。",
           "ex": "I studied IT at graduate school.",
+          "exja": "私は大学院でITを学びました。",
           "ctx": "「ITを学んだ」と専攻を述べる場面。"
         }
       ]
@@ -184,6 +201,7 @@
           "right": "share the results in the next meeting",
           "why": "特定の次回会合なので the next meeting。結果も自分たちのその結果なので the results。可算名詞には冠詞が必要。",
           "ex": "We will share the results in the next meeting.",
+          "exja": "次のミーティングで結果を共有します。",
           "ctx": "検証結果を「次のミーティングで共有する」と述べる場面。"
         },
         {
@@ -193,6 +211,7 @@
           "right": "if we promote globalisation",
           "why": "globalisation は抽象・一般概念なので無冠詞。動詞も have より promote が自然。",
           "ex": "If we promote globalisation, ideas spread faster.",
+          "exja": "グローバル化を進めれば、アイデアはより速く広まります。",
           "ctx": "「グローバル化を進めれば」と一般論で語り出す場面。"
         },
         {
@@ -202,6 +221,7 @@
           "right": "That is the best idea",
           "why": "最上級には the を付ける（the best / the largest）。",
           "ex": "That is the best idea I have come up with.",
+          "exja": "それが、私の思いついた最良の案です。",
           "ctx": "自分の考えを「一番良い案だ」と述べる場面。"
         },
         {
@@ -211,6 +231,7 @@
           "right": "It would be the United States of America",
           "why": "複数形を含む国名には the（the United States, the Netherlands, the Philippines）。",
           "ex": "The United States has long been a nation of immigrants.",
+          "exja": "アメリカは長らく、移民の国であり続けています。",
           "ctx": "回答の書き出しで国名を挙げる場面。"
         },
         {
@@ -220,6 +241,7 @@
           "right": "The recent situation in the U.S. is unclear to me",
           "why": "特定の状況なので the。国名は the U.S.。unknown より unclear to me が自然。",
           "ex": "The recent situation in the U.S. is unclear to me.",
+          "exja": "最近のアメリカの状況は、私にはよく分かりません。",
           "ctx": "「最近の米国の状況はよく分からない」と述べる場面。"
         },
         {
@@ -229,6 +251,7 @@
           "right": "who was born in a different country",
           "why": "可算名詞 country に a。「生まれた」は過去の受動 was born。",
           "ex": "Elon Musk was born in a different country, South Africa.",
+          "exja": "イーロン・マスクは、別の国である南アフリカで生まれました。",
           "ctx": "多文化の具体例（イーロン・マスク）を挙げる場面。"
         },
         {
@@ -238,6 +261,7 @@
           "right": "I can teach programming",
           "why": "programming は不可算の活動名。一般論として語るときは無冠詞。",
           "ex": "I can teach programming to beginners.",
+          "exja": "私は、初心者にプログラミングを教えられます。",
           "ctx": "「プログラミングを教えられる」とアピールする場面。"
         },
         {
@@ -247,6 +271,7 @@
           "right": "developing mobile applications",
           "why": "スペルは mobile。一般的な「モバイルアプリ」は複数形 applications にする。",
           "ex": "I have recently been developing mobile applications.",
+          "exja": "私は最近、モバイルアプリを開発しています。",
           "ctx": "「モバイルアプリを開発している」と述べる場面。"
         }
       ]
@@ -264,6 +289,7 @@
           "right": "share the results / our findings",
           "why": "consequence は「（悪い）結果・報い」の意味。研究や実験の「結果・成果」は result(s) / findings を使う。",
           "ex": "We are going to share our findings next time.",
+          "exja": "次回、私たちの調査結果を共有する予定です。",
           "ctx": "検証で得た“成果”を共有すると伝える場面。"
         },
         {
@@ -273,6 +299,7 @@
           "right": "These are our assignments",
           "why": "assignments（複数）が主語 → These are。指示語・be動詞・名詞の“単複”をそろえる（最重要弱点）。※模範では冗長として削除も可。",
           "ex": "These are the tasks we must finish before next week.",
+          "exja": "これらが来週までに終わらせるべき課題です。",
           "ctx": "課題を挙げ終えて「これが私たちの課題です」とまとめる場面。"
         },
         {
@@ -282,6 +309,7 @@
           "right": "people who have a global mindset",
           "why": "the global style は曖昧。「国際的な考え方を持つ人」は a global mindset が自然。",
           "ex": "People with a global mindset adapt quickly to new cultures.",
+          "exja": "国際的な考え方を持つ人は、新しい文化にすぐ適応します。",
           "ctx": "「グローバルな考えを持つ人と関われば」と述べる場面。"
         },
         {
@@ -291,6 +319,7 @@
           "right": "the number of languages is decreasing over time",
           "why": "主語の中心は the number（単数）→ is。「時間とともに」は over time が自然。",
           "ex": "The number of endangered languages is decreasing over time.",
+          "exja": "絶滅の危機にある言語の数は、時間とともに減少しています。",
           "ctx": "統計を根拠に「言語数が年々減っている」と述べる場面。"
         },
         {
@@ -300,6 +329,7 @@
           "right": "one of the problems",
           "why": "one of the + 複数名詞。「〜のうちの1つ」は必ず複数形。",
           "ex": "This is one of the problems caused by globalisation.",
+          "exja": "これは、グローバル化が引き起こす問題の一つです。",
           "ctx": "「これもグローバル化の問題の一つだ」とまとめる場面。"
         },
         {
@@ -309,6 +339,7 @@
           "right": "if we further accelerate globalisation",
           "why": "「さらに加速する」は further accelerate。accelerate more は不自然。",
           "ex": "If we further accelerate globalisation, cooperation will grow.",
+          "exja": "グローバル化をさらに加速すれば、協力が深まります。",
           "ctx": "「グローバル化をさらに進めれば」と述べる場面。"
         },
         {
@@ -318,6 +349,7 @@
           "right": "will increase",
           "why": "未来の増加は will increase で十分。is going to be increasing は冗長・不自然。",
           "ex": "Opportunities for interaction will increase due to globalisation.",
+          "exja": "グローバル化によって、交流の機会は増えていきます。",
           "ctx": "交流機会が「増えるだろう」と予測する場面。"
         },
         {
@@ -327,6 +359,7 @@
           "right": "we should not continue to promote and accelerate",
           "why": "助言は should / had better。we better do not は語順が壊れている。",
           "ex": "We should not accelerate globalisation without protecting local cultures.",
+          "exja": "地域文化を守らないまま、グローバル化を加速すべきではありません。",
           "ctx": "逆の立場で「進めるべきでない」と主張する場面。"
         },
         {
@@ -336,6 +369,7 @@
           "right": "we should communicate ... by speaking a common language",
           "why": "do conversation は不自然。communicate / have conversations を使う。a common language と冠詞も必要。",
           "ex": "We should communicate with the world by speaking a common language, such as English.",
+          "exja": "英語のような共通言語を話して、世界と意思疎通すべきです。",
           "ctx": "「共通言語で世界と対話すべき」と提案する結びの場面。"
         },
         {
@@ -345,6 +379,7 @@
           "right": "successful at embracing multiculturalism in academia",
           "why": "multicultural は形容詞。名詞は multiculturalism。「多文化を受け入れる」は embrace multiculturalism。",
           "ex": "The country is successful at embracing multiculturalism.",
+          "exja": "その国は、多文化主義を受け入れることに成功しています。",
           "ctx": "アメリカの多文化での成功を説明する場面。"
         },
         {
@@ -354,6 +389,7 @@
           "right": "one example of a successful person",
           "why": "「一例」は one example of a + 名詞。person に a が必要。",
           "ex": "One example of a successful immigrant is Elon Musk.",
+          "exja": "成功した移民の一例が、イーロン・マスクです。",
           "ctx": "成功例を挙げる導入の場面。"
         },
         {
@@ -363,6 +399,7 @@
           "right": "The most popular festival events in Japan are fireworks displays",
           "why": "花火（fireworks）は物であり祭りそのものではない。festival events / fireworks displays と表し、複数なので are。",
           "ex": "Some of the most popular summer events in Japan are fireworks displays.",
+          "exja": "日本で最も人気のある夏のイベントの一つが、花火大会です。",
           "ctx": "「日本で一番人気の祭りは花火（大会）だ」と切り出す場面。"
         },
         {
@@ -372,6 +409,7 @@
           "right": "The fireworks are held at various locations",
           "why": "fireworks は複数扱い → are。all locations（全域）は大げさで、various locations（各地）が自然。",
           "ex": "Fireworks are held at various locations across Japan.",
+          "exja": "花火大会は、日本各地のさまざまな場所で開催されます。",
           "ctx": "「花火が各地で開催される」と説明する場面。"
         },
         {
@@ -381,6 +419,7 @@
           "right": "There are usually food stalls on the street",
           "why": "屋台は複数 stalls。会場の通りは on the street（on the site は工事現場的で不自然）。",
           "ex": "There are usually food stalls lining the street.",
+          "exja": "たいてい、通り沿いに屋台が並んでいます。",
           "ctx": "「屋台が出ている」と描写する場面。"
         },
         {
@@ -390,6 +429,7 @@
           "right": "We can watch the fireworks while eating delicious food",
           "why": "予定された催しは watch。while がないと「花火が食べている」意味に。food は一般に不可算。",
           "ex": "We can watch the fireworks while eating delicious food.",
+          "exja": "おいしい食べ物を食べながら、花火を見ることができます。",
           "ctx": "「食べながら花火を見られる」と述べる場面。"
         },
         {
@@ -399,6 +439,7 @@
           "right": "The left pie chart",
           "why": "円グラフは pie chart（circle graph ではない）。IELTS Task1 の必須用語。",
           "ex": "The two pie charts compare the ages of Facebook users.",
+          "exja": "2つの円グラフは、Facebook利用者の年齢を比較しています。",
           "ctx": "円グラフを描写し始める場面。"
         },
         {
@@ -408,6 +449,7 @@
           "right": "made up 51% of users / accounted for 51%",
           "why": "割合は make up / account for。dominate は「圧倒的多数を占める」ときだけ。",
           "ex": "Users aged 13 to 24 made up 51% of the total.",
+          "exja": "13〜24歳の利用者が、全体の51%を占めていました。",
           "ctx": "各年齢層の割合を述べる場面。"
         },
         {
@@ -417,6 +459,7 @@
           "right": "In more detail, the left chart shows 51%",
           "why": "「詳しく見ると」は In more detail / Looking more closely。",
           "ex": "In more detail, the youngest group made up just over half.",
+          "exja": "より詳しく見ると、最年少の層が半分強を占めていました。",
           "ctx": "概要のあと、細部の数値に入る場面。"
         }
       ]
@@ -434,6 +477,7 @@
           "right": "I do not know what President Trump thinks",
           "why": "know の後に節を続けるには what が必要（know + what + 主語 + 動詞）。",
           "ex": "I do not know what the government thinks about this issue.",
+          "exja": "政府がこの問題についてどう考えているのか、私には分かりません。",
           "ctx": "「トランプ大統領が何を考えているか分からない」と述べる場面。"
         },
         {
@@ -443,6 +487,7 @@
           "right": "even in rural areas",
           "why": "スペルは rural。even if there are は文構造が崩れる。even in rural areas で場所を自然につなぐ。",
           "ex": "Fireworks are held everywhere, even in rural areas.",
+          "exja": "花火大会は、田舎も含めていたるところで開催されます。",
           "ctx": "「田舎でも開催される」と補足する場面。"
         },
         {
@@ -452,6 +497,7 @@
           "right": "people aged 66 to 80 used Facebook the least",
           "why": "年齢は people aged 66 to 80（for は不要）。過去データなので used。語順は people aged ... used Facebook。",
           "ex": "People aged 66 to 80 used Facebook the least.",
+          "exja": "66〜80歳の人々が、Facebookを最も使っていませんでした。",
           "ctx": "「66〜80歳の利用が最も少ない」と述べる場面。"
         },
         {
@@ -461,6 +507,7 @@
           "right": "I am Kaito from Japan, and I am interested",
           "why": "who am は不可。自分のことは I を主語に and I am interested と続ける。",
           "ex": "My name is Kaito, and I am interested in your school.",
+          "exja": "私はカイトと申します。御校に興味があります。",
           "ctx": "自己紹介＋志望動機の書き出し。"
         },
         {
@@ -470,6 +517,7 @@
           "right": "I am suitable / well qualified for teaching",
           "why": "suitable は形容詞なので be動詞が必要（can は不可）。I am suitable for + 名詞。",
           "ex": "I am well suited to teaching IT to children.",
+          "exja": "私は、子どもにITを教えるのに適しています。",
           "ctx": "「ITを教えるのに適任」とアピールする場面。"
         }
       ]

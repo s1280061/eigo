@@ -21,13 +21,17 @@ const catFile = {
   "コロケーション":"4_Collocations", "文構造":"5_SentenceStructure"
 };
 
+// 例文の日本語訳（別ファイル）を合流
+const exja = JSON.parse(fs.readFileSync(path.join(dir, "ex-ja.json"), "utf8"));
+
 const groups = cats.map(c => ({
   cat: c,
   catEn: catEn[c],
   color: catColor[c],
   file: catFile[c],
   slides: D.mistakes.filter(m => m.cat === c).map(m => ({
-    id: m.id, topic: m.topic, wrong: m.wrong, right: m.right, why: m.why, ex: m.ex, ctx: m.ctx
+    id: m.id, topic: m.topic, wrong: m.wrong, right: m.right, why: m.why,
+    ex: m.ex, exja: exja[m.id] || "", ctx: m.ctx
   }))
 }));
 
