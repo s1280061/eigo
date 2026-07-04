@@ -161,8 +161,9 @@ async def build_audio(groups):
         a = await tts(f"{g['catEn']}.", EN_VOICE, EN_RATE) + sil(300) + await tts(f"{g['cat']}の復習です。", JA_VOICE) + sil(700)
         a.export(os.path.join(ACLIPS, f"{gkey(g)}_00.mp3"), format="mp3", bitrate="128k")
         for i, s in enumerate(g["slides"], 1):
-            # ① 英文 → ② 日本語訳 → ③ 解説
-            seg = await tts(s["ex"], EN_VOICE, EN_RATE) + sil(600)
+            # ① 英文×2 → ② 日本語訳 → ③ 解説
+            en = await tts(s["ex"], EN_VOICE, EN_RATE)
+            seg = en + sil(500) + en + sil(700)
             if s.get("exja"):
                 seg += await tts(s["exja"], JA_VOICE) + sil(700)
             seg += await tts_mixed(s["why"]) + sil(2500)
