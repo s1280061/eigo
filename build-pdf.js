@@ -7,12 +7,13 @@ eval(fs.readFileSync(path.join(dir, 'data.js'), 'utf8'));
 const D = window.IELTS_DATA;
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 
-const cats = ["品詞","前置詞","冠詞","コロケーション"];
+const cats = ["品詞","前置詞","冠詞","コロケーション","文構造"];
 const catDesc = {
   "品詞":"Word Form — 名詞を無理に動詞化しない。形容詞と名詞を使い分ける。",
   "前置詞":"Prepositions — 動詞・形容詞は前置詞ごとセットで覚える。",
-  "冠詞":"Articles — 抽象名詞＝無冠詞 / 可算単数＝a / 複数国名＝the。",
-  "コロケーション":"Collocations — 自然に結びつく語の組み合わせ（have a conversation 等）。"
+  "冠詞":"Articles — 抽象名詞＝無冠詞 / 可算単数＝a / 特定・最上級＝the。",
+  "コロケーション":"Collocations — 自然に結びつく語の組み合わせ（make up / at risk 等）。",
+  "文構造":"Sentence Structure — 動詞・be動詞・語順の欠落を直す（英文に動詞は必ず1つ）。"
 };
 
 function mistakeBlock(m){
@@ -34,7 +35,13 @@ const catSections = cats.map(c=>{
 const top5 = D.top5.map(t=>`<tr><td class="rank">${t.rank}</td><td><b>${esc(t.title)}</b><br><span class="sym">例: ${esc(t.symptom)}</span></td><td>${esc(t.fix)}</td></tr>`).join('');
 const week = D.week.map(w=>`<tr><td class="day">${esc(w.day)}</td><td><b>${esc(w.theme)}</b></td><td>${esc(w.task)}</td></tr>`).join('');
 const prio = D.priority.map(p=>`<div class="pr"><h3>${esc(p.tier)} <span class="pd">(${esc(p.desc)})</span></h3><ul>${p.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join('');
-const essays = D.essays.map(e=>`<div class="es"><h3>${esc(e.title)}</h3><p>${esc(e.after)}</p></div>`).join('');
+const essays = D.essays.map(e=>`<div class="es">
+  <h3>${esc(e.title)} <span class="ewords">（${esc(e.words||'')}）</span></h3>
+  <div class="eprompt">🖊 ${esc(e.prompt)}</div>
+  <div class="eblock eorig"><span class="etag bad">① あなたの原文</span><br>${esc(e.original)}</div>
+  <div class="eblock enat"><span class="etag good">② 自然な表現</span><br>${esc(e.natural)}</div>
+  ${e.improved?`<div class="eblock eimp"><span class="etag imp">③ 改良版（Band 7+）</span><br>${esc(e.improved)}</div>`:''}
+</div>`).join('');
 
 const html = `<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8">
 <title>IELTS 弱点改善ノート</title>
@@ -70,8 +77,14 @@ th { background:#0b4f8a; color:#fff; }
 .sym { color:#777; font-size:8.5pt; }
 .pr { break-inside:avoid; margin:3mm 0; }
 .pr ul { margin:1mm 0 0; padding-left:6mm; }
-.es { break-inside:avoid; background:#f7f9fc; border-radius:6px; padding:3mm 4mm; margin:3mm 0; }
+.es { break-inside:avoid; background:#f7f9fc; border-radius:6px; padding:3mm 4mm; margin:4mm 0; }
 .es p { margin:1mm 0 0; }
+.es h3 .ewords { font-size:9pt; color:#888; font-weight:normal; }
+.eprompt { font-size:9pt; color:#555; background:#eef2f7; border-radius:4px; padding:2mm 3mm; margin:1.5mm 0 2.5mm; }
+.eblock { font-size:9.5pt; line-height:1.6; border-radius:5px; padding:2.5mm 3mm; margin:2mm 0; }
+.etag { display:inline-block; font-size:8.5pt; font-weight:bold; border-radius:3px; padding:0.5mm 2mm; }
+.etag.bad { background:#fdecec; color:#c0392b; } .etag.good { background:#e9f7ef; color:#1e8449; } .etag.imp { background:#f0eafb; color:#7b3fe4; }
+.eblock.eorig { background:#fdf3f3; color:#777; } .eblock.enat { background:#eef9f2; } .eblock.eimp { background:#f5f0fc; }
 .pagebreak { break-before:page; }
 footer { text-align:center; color:#999; font-size:8pt; margin-top:8mm; }
 </style></head><body>
@@ -86,8 +99,8 @@ footer { text-align:center; color:#999; font-size:8pt; margin-top:8mm; }
 <h2>はじめに</h2>
 <div class="intro">
 あなたのアイデア・構成はすでに Band 7 級。<b>負けているのは「文法の正確さ」だけ</b>です。<br>
-本ノートは、あなたの英作文5本から抽出したミスを <b>①品詞 ②前置詞 ③冠詞 ④コロケーション</b> の4カテゴリに整理し、
-各ミスに「なぜ間違いか」と「IELTSで使える例文」を付けたものです。まずは主語↔動詞の一致を制すること。
+本ノートは、あなたの英作文6本と公式添削から抽出したミスを <b>①品詞 ②前置詞 ③冠詞 ④コロケーション ⑤文構造</b> の5カテゴリに整理し、
+各ミスに「どんな場面か」「なぜ間違いか」「IELTSで使える例文」を付けたものです。巻末に6設問の模範解答（原文→自然な表現→改良版）も収録。まずは主語↔動詞の一致を制すること。
 </div>
 
 <h2>カテゴリ別 ミス一覧（全${D.mistakes.length}項目）</h2>
@@ -105,7 +118,7 @@ ${catSections}
 ${prio}
 
 <div class="pagebreak"></div>
-<h2>修正済み 全文（After 模範）</h2>
+<h2>模範解答（原文 → 自然な表現 → 改良版）</h2>
 ${essays}
 
 <footer>IELTS 弱点改善ノート — ${esc(D.updated)} — 通勤ウェブアプリ版も同梱</footer>

@@ -1,345 +1,567 @@
 # IELTS Writing 弱点改善ノート（Kaito 専用）
 
 作成日: 2026-07-04
-対象: あなたが書いた英作文 5本（Globalisation / USA・多文化 / Festival / Facebookグラフ / 志望メール）
 目標: **IELTS Band 6.5**
+出典: あなたの英作文6本 ＋ 公式添削（自然な表現・番号解説）
+
+> このノートは `data.js` から自動生成されています。ウェブアプリ・印刷PDFと内容は完全に同期しています。
 
 ---
 
 ## 目次
-1. [全体講評（まず結論）](#1-全体講評まず結論)
-2. [カテゴリ別 ミス一覧](#2-カテゴリ別-ミス一覧)
-   - [A. 品詞（Word Form）](#a-品詞word-form)
-   - [B. 前置詞（Prepositions）](#b-前置詞prepositions)
-   - [C. 冠詞（Articles）](#c-冠詞articles)
-   - [D. コロケーション（自然な英語表現）](#d-コロケーション自然な英語表現)
-3. [修正済み 全文（Before → After）](#3-修正済み-全文before--after)
-4. [あなたが特に苦手なポイント TOP5](#4-あなたが特に苦手なポイント-top5)
+1. [全体講評](#1-全体講評)
+2. [カテゴリ別 ミス一覧（全48項目）](#2-カテゴリ別-ミス一覧全48項目)
+3. [模範解答（原文 → 自然な表現 → 改良版）](#3-模範解答原文--自然な表現--改良版)
+4. [苦手ポイント TOP5](#4-苦手ポイント-top5)
 5. [1週間 練習メニュー](#5-1週間-練習メニュー)
-6. [Band 6.5 達成のための優先順位](#6-band-65-達成のための優先順位)
+6. [Band 6.5 優先順位](#6-band-65-優先順位)
 
 ---
 
-## 1. 全体講評（まず結論）
+## 1. 全体講評
 
-**良い点**
-- 主張→理由→具体例→まとめ、という論理の型がすでに身についている。
-- `on the other hand`, `for example`, `due to`, `as time goes by` など**つなぎ言葉**を使おうとする意識が高い。これはBand 6以上で評価される。
-- 内容（アイデア）は十分にBand 6.5レベル。**負けているのは「文法の正確さ」だけ**です。
-
-**伸ばすべき点（1文でいうと）**
-> 「動詞・名詞の形」「主語と動詞の一致」「単数/複数」でBandを落としている。ここを直すだけで一気に6.5が見えます。
-
-IELTSの採点4項目のうち、あなたが今 **落としているのは Grammatical Range & Accuracy（文法の正確さ）** です。逆にここが最も伸びしろが大きい。
+あなたのアイデア・構成はすでに **Band 7 級**。負けているのは **「文法の正確さ」だけ** です。
+本ノートは、あなたの英作文6本と公式添削から抽出したミスを **①品詞 ②前置詞 ③冠詞 ④コロケーション ⑤文構造** の5カテゴリに整理しました。各ミスには「どんな場面か（状況）」「なぜ間違いか」「IELTSで使える例文」を付けています。まずは主語↔動詞の一致を制すること。
 
 ---
 
-## 2. カテゴリ別 ミス一覧
+## 2. カテゴリ別 ミス一覧（全48項目）
 
-> 各項目: **❌誤り → ✅正しい表現 → 💡なぜ間違いか → 📝IELTSで使える例文**
+### 品詞（6項目）
+_Word Form — 名詞を無理に動詞化しない。形容詞と名詞を使い分ける。_
 
----
+#### 1. 手紙: 病気の友人へ
+📍 **状況**: 体調を崩した友人を気づかう場面。「あなたのことが心配です」。
 
-### A. 品詞（Word Form）
+- ❌ **誤り**: I am worry about you
+- ✅ **正しい**: **I am worried about you**
+- 💡 **なぜ**: worry は動詞（心配する）。「心配している」という“状態”は形容詞 worried。be動詞 + worried + about。
+- 📝 **例文**: *I am worried about your health. I hope you get well soon.*
 
-#### A-1. do communication → communicate
-- ❌ `you can do communication easily`
-- ✅ `you can **communicate** easily`
-- 💡 `communication`（名詞）を `do` で無理に動詞化している。「意思疎通する」は動詞 **communicate** 一語で表す。`do communication` は不自然。
-- 📝 *Social media allows people to **communicate** across borders instantly.*
+#### 7. Task2: グローバル化
+📍 **状況**: グローバル化の利点。「簡単に意思疎通できる」と言いたい場面。
 
-#### A-2. do task → complete / do a task
-- ❌ `you can do task faster`
-- ✅ `you can **complete tasks** faster`
-- 💡 動詞は `complete / carry out / perform`。`task` は可算名詞なので `a task` か複数形 `tasks` が必要。
-- 📝 *Automation helps employees **complete tasks** more efficiently.*
+- ❌ **誤り**: you can do communication easily
+- ✅ **正しい**: **you can communicate easily**
+- 💡 **なぜ**: communication（名詞）を do で動詞化しない。「意思疎通する」は動詞 communicate 一語で表す。
+- 📝 **例文**: *Globalisation allows us to communicate easily across borders.*
 
-#### A-3. dissapperment → disappearing / disappearance
-- ❌ `at risk of dissapperment`（スペルも誤り）
-- ✅ `at risk of **disappearing**` または `at risk of **disappearance**`
-- 💡 名詞は **disappearance**、動名詞は **disappearing**。`dissapperment` という単語は存在しない。
-- 📝 *Many minority languages are at risk of **disappearing** within a generation.*
+#### 8. Task2: グローバル化
+📍 **状況**: 同じく利点。「作業を速くこなせる」と続けたい場面。
 
-#### A-4. In summarization → In summary / To summarise
-- ❌ `In summarization`
-- ✅ `**In summary,**` / `**To summarise,**`
-- 💡 まとめの定型句は `In summary` か `To conclude`。`summarization` は「要約という行為」を指す技術用語で、結論の合図には使わない。
-- 📝 ***To summarise,** the benefits of globalisation outweigh its drawbacks.*
+- ❌ **誤り**: you can do task faster
+- ✅ **正しい**: **you can complete tasks more quickly**
+- 💡 **なぜ**: 動詞は complete / carry out。task は可算名詞で複数 tasks。副詞は faster より more quickly が自然。
+- 📝 **例文**: *We can complete tasks more quickly thanks to technology.*
 
-#### A-5. successful at multicultural → multiculturalism
-- ❌ `successful at multicultural in academia`
-- ✅ `successful in **promoting multiculturalism** in academia`
-- 💡 `multicultural` は**形容詞**（多文化の）。「多文化主義」という名詞は **multiculturalism**。
-- 📝 *Canada is often praised for its policy of **multiculturalism**.*
+#### 12. Task2: グローバル化
+📍 **状況**: 地方文化・言語が「消滅」しかねないと述べる場面。
 
-#### A-6. graduated school → graduate school
-- ❌ `I have graduated from graduated school`
-- ✅ `I **graduated** from **graduate** school`
-- 💡 「大学院」は **graduate school**（graduate は形容詞的に使う）。過去の一度きりの事実は過去形 `graduated` でよく、`have graduated` は不要。
-- 📝 *After **graduate** school, I began working as a software engineer.*
+- ❌ **誤り**: at risk of dissapperment
+- ✅ **正しい**: **at risk of disappearance / disappearing**
+- 💡 **なぜ**: 名詞は disappearance、動名詞は disappearing。dissapperment という語は存在しない。
+- 📝 **例文**: *Many languages are at risk of disappearance.*
 
----
+#### 18. Task2: 結論の書き出し
+📍 **状況**: 最終段落。「まとめると」と結論を書き始める場面。
 
-### B. 前置詞（Prepositions）
+- ❌ **誤り**: In summarization
+- ✅ **正しい**: **In summary / To summarise**
+- 💡 **なぜ**: まとめの合図は In summary / To conclude。summarization（要約という行為）は使わない。
+- 📝 **例文**: *In summary, globalisation has both benefits and drawbacks.*
 
-#### B-1. communicate each other → communicate WITH each other
-- ❌ `we can communicate each other`
-- ✅ `we can communicate **with** each other`
-- 💡 `communicate` は自動詞で、相手を示すには **with** が必要。
-- 📝 *Colleagues in different countries can now communicate **with** each other in real time.*
+#### 44. 手紙: 塾への応募
+📍 **状況**: 経歴として「大学院を卒業した」と述べる場面。
 
-#### B-2. in risk → at risk
-- ❌ `may be in risk of`
-- ✅ `may be **at** risk of`
-- 💡 「〜の危機にある」は固定表現 **at risk (of)**。`in risk` とは言わない。
-- 📝 *Local traditions are **at risk of** being lost.*
-
-#### B-3. who lives Africa → who live IN Africa
-- ❌ `people who lives Africa`
-- ✅ `people who **live in** Africa`
-- 💡 「〜に住む」は **live in + 場所**。（＋主語 `people` は複数なので動詞は `live`。B-4参照）
-- 📝 *People who **live in** rural areas often preserve older customs.*
-
-#### B-4. attributed from → attributed TO
-- ❌ `one of the problem attributed from globalisation`
-- ✅ `one of the problems attributed **to** globalisation`
-- 💡 「〜に起因する／〜のせいにされる」は **attribute A to B**。`from` は不可。
-- 📝 *Rising inequality is often attributed **to** globalisation.*
-
-#### B-5. curious your school → curious ABOUT
-- ❌ `I am curious your cram school`
-- ✅ `I am curious **about** your school`
-- 💡 `curious` は必ず **about** を伴う。
-- 📝 *I am curious **about** the teaching methods used at your school.*
-
-#### B-6. suited / suitable の前置詞
-- ❌ `I can suitable for teaching`
-- ✅ `I am well **suited to** teaching` / `I am **suitable for** teaching`
-- 💡 `suitable **for** + 名詞`、`suited **to** + 名詞/-ing`。動詞 `am` を必ず入れる。
-- 📝 *My background makes me well **suited to** teaching programming.*
+- ❌ **誤り**: I have graduated from graduated school
+- ✅ **正しい**: **I graduated from graduate school**
+- 💡 **なぜ**: 「大学院」は graduate school。過去の一度きりの事実は過去形 graduated（現在完了は不要）。
+- 📝 **例文**: *I graduated from graduate school, where I studied IT.*
 
 ---
 
-### C. 冠詞（Articles）
+### 前置詞（11項目）
+_Prepositions — 動詞・形容詞は前置詞ごとセットで覚える。_
 
-#### C-1. the United States（国名の the）
-- ❌ `It would be United States of America`
-- ✅ `It would be **the** United States of America`
-- 💡 複数形を含む国名には **the** が付く（the United States, the Netherlands, the Philippines）。
-- 📝 ***The** United States has long been a nation of immigrants.*
+#### 2. 手紙: 病気の友人へ
+📍 **状況**: 本題の切り出し。「3点お知らせします」と伝える場面。
 
-#### C-2. if we have the globalisation（抽象名詞に the 不要）
-- ❌ `if we have the globalisation`
-- ✅ `with **globalisation**`（the を取る）
-- 💡 `globalisation` のような抽象・一般概念には冠詞を付けない。
-- 📝 *With **globalisation**, ideas spread faster than ever before.*
+- ❌ **誤り**: I would like to inform you three items
+- ✅ **正しい**: **I would like to inform you of three items**
+- 💡 **なぜ**: inform は inform + 人 + of / about + 物。目的語を2つ並べられず、of（または about）が必要。
+- 📝 **例文**: *I would like to inform you of three points.*
 
-#### C-3. speaking common language → a common language
-- ❌ `speaking common language`
-- ✅ `speaking **a** common language`
-- 💡 `language` は可算名詞。「1つの共通言語」なので **a** が必要。
-- 📝 *Sharing **a** common language makes international cooperation easier.*
+#### 3. 手紙: 病気の友人へ
+📍 **状況**: 手紙の最後。「また学校に戻ってきてね」と励ます場面。
 
-#### C-4. born in different country → a different country
-- ❌ `who is born in diffrerent country`
-- ✅ `who **was** born in **a** different country`
-- 💡 可算名詞 `country` に **a**。また「生まれた」は過去の受動 **was born**。
-- 📝 *Elon Musk **was** born in **a** different country, South Africa.*
+- ❌ **誤り**: come back a school again
+- ✅ **正しい**: **come back to school again**
+- 💡 **なぜ**: 「〜へ戻る」は come back to + 場所。school は go / come back to school で無冠詞（a を付けない）。
+- 📝 **例文**: *I hope you will come back to school soon.*
 
-#### C-5. teach the programming → teach programming
-- ❌ `I can teach the programming and IT`
-- ✅ `I can teach **programming** and IT`（the を取る）
-- 💡 `programming` は不可算の学問・活動名。一般論として語るときは無冠詞。
-- 📝 *I can teach **programming** to beginners.*
+#### 9. Task2: グローバル化
+📍 **状況**: 「お互いに意思疎通できる」と言う場面。
 
-#### C-6. The fireworks is held → Fireworks displays are held
-- ❌ `The fireworks is held at all locations`
-- ✅ `**Fireworks displays are** held in many areas`
-- 💡 `fireworks` は複数扱い → be動詞は `are`。また「花火大会」は **a fireworks display / festival**。
-- 📝 *Fireworks **displays are** held across Japan every summer.*
+- ❌ **誤り**: we can communicate each other
+- ✅ **正しい**: **we can communicate with each other**
+- 💡 **なぜ**: communicate は自動詞。相手を示すには with が必要。
+- 📝 **例文**: *People from different countries can communicate with each other instantly.*
 
----
+#### 11. Task2: グローバル化
+📍 **状況**: 地方文化が「消滅の危機にある」と言う場面。
 
-### D. コロケーション（自然な英語表現）
+- ❌ **誤り**: may be in risk of
+- ✅ **正しい**: **may be at risk of**
+- 💡 **なぜ**: 「〜の危機にある」は固定表現 at risk (of)。in risk とは言わない。
+- 📝 **例文**: *Local traditions are at risk of being lost.*
 
-#### D-1. the most popular festival is fireworks → a fireworks festival
-- ❌ `The most popular festival in Japan is fireworks.`
-- ✅ `One of the most popular festivals in Japan is the **fireworks festival**.`
-- 💡 「祭り＝花火」ではなく「花火**大会（祭り）**」。物（fireworks）とイベント（festival）を混同しない。
-- 📝 *One of the most popular summer events in Japan is the **fireworks festival**.*
+#### 13. Task2: グローバル化
+📍 **状況**: 具体例の導入。「こうした欠点を聞いたことがある」場面。
 
-#### D-2. circle graph / dominates → pie chart / accounts for（Task 1 用語）
-- ❌ `The left circle graph ... dominates 51% users`
-- ✅ `The left **pie chart** shows that ... **accounted for** 51% of users`
-- 💡 IELTS Task 1では **pie chart**（円グラフ）。割合を述べる動詞は **account for / make up / represent**。`dominate` は「圧倒的多数を占める」ときだけ。
-- 📝 *Users aged 25–40 **accounted for** 47% of the total in 2015.*
+- ❌ **誤り**: I have heard of that bad points
+- ✅ **正しい**: **I have heard about these drawbacks**
+- 💡 **なぜ**: この文構造では heard about が自然。heard of は「〜の存在を知っている」の意味で用途が違う。
+- 📝 **例文**: *I have heard about these drawbacks from friends abroad.*
 
-#### D-3. More details → In more detail / To go into detail
-- ❌ `More details, left graph is 51% ...`
-- ✅ `**In more detail,** the left chart shows 51% ...`
-- 💡 「詳しく言うと」は **In more detail** か **Looking more closely**。
-- 📝 ***In more detail,** the figure for younger users fell sharply.*
+#### 14. Task2: グローバル化
+📍 **状況**: 「アフリカに住む人から聞いた」と例示する場面。
 
-#### D-4. do conversation → have a conversation / converse
-- ❌ `we better do conversation from all over the world`
-- ✅ `we should **have conversations** with people from all over the world`
-- 💡 `conversation` は **have** と結びつく（do ではない）。
-- 📝 *Students should **have conversations** with native speakers regularly.*
+- ❌ **誤り**: people who lives Africa
+- ✅ **正しい**: **people who live in Africa**
+- 💡 **なぜ**: 「〜に住む」は live in + 地名。people は複数なので動詞は live。
+- 📝 **例文**: *People who live in Africa shared their experiences online.*
 
-#### D-5. we better do not → we had better not / we should not
-- ❌ `we better do not declare and accelerate`
-- ✅ `we **should not** promote` / `we **had better not** accelerate`
-- 💡 助言は `should` か `had better`。`we better do not` は語順・形が崩れている。IELTSでは自然な `should` を推奨。
-- 📝 *Governments **should not** ignore the cultural costs of globalisation.*
+#### 17. Task2: グローバル化
+📍 **状況**: 問題の原因をグローバル化に帰す場面。
 
-#### D-6. developed by adapting immigration → thrived by embracing immigration
-- ❌ `This country developed by adapting immigration`
-- ✅ `This country **has thrived by embracing** immigration`
-- 💡 `adapt`（適応する）ではなく **embrace / welcome**（受け入れる）。移民に対して使う自然な動詞。
-- 📝 *The nation **has thrived by embracing** people from many cultures.*
+- ❌ **誤り**: attributed from globalisation
+- ✅ **正しい**: **attributed to globalisation**
+- 💡 **なぜ**: 「〜に起因する」は attribute A to B。from は不可。
+- 📝 **例文**: *Rising inequality is often attributed to globalisation.*
 
-#### D-7. the number of languages ARE → IS（主語一致）
-- ❌ `the number of languages are decreasing`
-- ✅ `the number of languages **is** decreasing`
-- 💡 主語の中心は **the number**（単数）→ 動詞は `is`。※ `a number of languages **are**` なら複数。この2つは頻出の区別。
-- 📝 *The number of endangered languages **is** rising every decade.*
+#### 21. Task2: グローバル化
+📍 **状況**: 「他者と交流する機会が増える」と述べる場面。
 
-#### D-8. Yours faithfully（メールの結び）
-- ❌ `Dear Sir, ... Sincerely,`
-- ✅ 相手の名前が不明で `Dear Sir/Madam` の場合は **Yours faithfully,**。名前がわかる `Dear Mr Tanaka` なら **Yours sincerely,**。
-- 💡 IELTS Formal Letterの定番ルール。ここを外すと減点。
-- 📝 *Dear Sir or Madam, … **Yours faithfully,** Kaito*
+- ❌ **誤り**: the opportunities of interaction of other people
+- ✅ **正しい**: **opportunities for interaction with other people**
+- 💡 **なぜ**: opportunities for（〜の機会）、interaction with（〜との交流）。どちらも決まった前置詞。
+- 📝 **例文**: *Globalisation increases opportunities for interaction with people worldwide.*
 
----
+#### 28. 会話: 多文化の成功例(米国)
+📍 **状況**: 「移民に適応して発展してきた」と述べる場面。
 
-## 3. 修正済み 全文（Before → After）
+- ❌ **誤り**: developed by adapting immigration
+- ✅ **正しい**: **has developed by adapting to immigration**
+- 💡 **なぜ**: adapt to（〜に適応する）。to が必要。過去から現在まで続くので現在完了 has developed。
+- 📝 **例文**: *The nation has developed by adapting to immigration.*
 
-### Essay 1 — Globalisation
-> **After（模範）**
-> There are both advantages and disadvantages to globalisation.
->
-> First, in terms of the benefits, it accelerates the speed of transactions, which means that people can **communicate** more easily and **complete tasks** faster. When we communicate **with** people who share a global mindset, we can understand **one another** more deeply.
->
-> On the other hand, there are some drawbacks. **With globalisation**, the cultures of local and rural areas may be **at risk of disappearing**. For example, I have heard **about** this problem from people who **live in** Africa on YouTube, and some statistics show that the number of languages **is** decreasing over time. This is one of the problems **attributed to** globalisation.
->
-> **In summary**, globalisation has both merits and demerits. If it continues, it may give us the chance to produce **innovative ideas** through discussion and a better understanding of diversity, and opportunities for interaction will keep increasing. To make the most of these opportunities, people around the world **should communicate** in a common language, such as English, which contributes to global development.
+#### 43. 手紙: 塾への応募
+📍 **状況**: 「広告を見て興味を持った」と伝える場面。
 
-### Essay 2 — Most successful multicultural country
-> **After（模範）**
-> It would be **the** United States of America, because this country has been successful **in promoting multiculturalism** in both academia and industry. It **has developed by embracing** immigration. The recent situation in the U.S. is uncertain, and I do not know **what** President Trump thinks. However, one clear example of a person who has **benefited from** a multicultural environment is Elon Musk, who **was born in a** different country, South Africa.
+- ❌ **誤り**: I am curious your cram school seeing its advertisement
+- ✅ **正しい**: **I became curious about your cram school after seeing its advertisement**
+- 💡 **なぜ**: curious about（〜に興味）。「広告を見て“から”」は after seeing。become で「興味を持ち始めた」。
+- 📝 **例文**: *I became curious about your school after seeing the advertisement.*
 
-### Essay 3 — Japanese festival
-> **After（模範）**
-> One of the most popular festivals in Japan is the **fireworks festival**. **Fireworks displays are** held **in many areas**, even in the countryside. There are usually **food stalls at** the venue, so we can enjoy the fireworks **while eating delicious food**.
+#### 45. 手紙: 塾への応募
+📍 **状況**: 「ITを学んだ」と専攻を述べる場面。
 
-### Essay 4 — Facebook users (Task 1)
-> **After（模範）**
-> The two **pie charts** compare the age distribution of Facebook users in 2005 and 2015.
-> In 2005, users aged 13–24 **made up** the largest group at 51%, whereas in 2015 this figure fell to 31%, and users aged 25–40 became the largest group at 47%. Interestingly, in both years people aged 66–80 **used** Facebook the **least**.
-> **In more detail**, in 2005 the age groups accounted for 51% (13–24), 32% (25–40), 16% (41–65) and 1% (66–80). In 2015, the figures were 31%, 47%, 19% and 3% respectively.
-
-*(※ Task 1では自分の意見や "Interestingly" のような主観は避け、データの比較に徹すると更に良い)*
-
-### Essay 5 — Application letter
-> **After（模範）**
-> Dear Sir or Madam,
->
-> My name is Kaito, and I am writing from Japan. I became **curious about** your school after seeing its advertisement. I **graduated** from **graduate** school in Japan, where I **studied** IT, so I am able to teach **programming** and IT. In addition, I have recently been developing **a mobile** application, which means I am well **suited to** teaching IT to children who are interested in the field.
->
-> I look forward to hearing from you.
->
-> **Yours faithfully,**
-> Kaito
-
-### Essay 6 — 病気の友人への研究連絡の手紙
-> **After（模範）**
-> Dear friend,
->
-> Hello! How are you? I heard that you are sick, and I am **worried** about you.
->
-> As the leader of our science project, I would like to **inform you of** three things: what we did in today's group work, our plan for the next meeting, and the assignments for it.
->
-> First, in today's group work, we **validated the accuracy of the microscope**. As you know, we had collected some data, and we used it for this validation. We will **share the results at the next meeting**.
->
-> Second, **at the next meeting**, we are going to have a discussion and share the data we have collected.
->
-> Lastly, the assignment for the next meeting is to read and analyse the collected data. **These are** our tasks.
->
-> I hope you will **come back to school** soon. Take care, and see you later!
->
-> **Best wishes,**
-> Kaito
-
-**この手紙の新しいミス（8項目・アプリ/PDFに収録）**
-
-| ID | カテゴリ | ❌誤り | ✅正しい | ポイント |
-|---|---|---|---|---|
-| A-7 | 品詞 | I am worry about you | I am **worried** about you | 状態は形容詞 worried |
-| B-7 | 前置詞 | inform you three items | inform you **of** three things | inform 人 **of/about** 物 |
-| B-8 | 前置詞 | come back a school | come back **to** school | come back **to** + 場所（school は無冠詞） |
-| B-9 | 前置詞 | in next meeting | **at the** next meeting | 会議は **at**、次回は **the** |
-| C-7 | 冠詞 | accuracy of microscope | accuracy of **the** microscope | 特定の可算単数に the |
-| D-9 | コロケーション | share that consequence | share the **results / findings** | consequence は「悪い結果」 |
-| D-10 | コロケーション | This is our assignments | **These are** our assignments | 単複・主語一致（最重要弱点） |
-| D-11 | コロケーション | Sincerely,（友人あて） | **Best wishes, / Take care,** | 親しい相手はカジュアルな結び |
+- ❌ **誤り**: studying about IT
+- ✅ **正しい**: **studying IT**
+- 💡 **なぜ**: study は他動詞で目的語を直接とる。about は不要。
+- 📝 **例文**: *I studied IT at graduate school.*
 
 ---
 
-## 4. あなたが特に苦手なポイント TOP5
+### 冠詞（8項目）
+_Articles — 抽象名詞＝無冠詞 / 可算単数＝a / 特定・最上級＝the。_
 
-| 順位 | 弱点 | 症状（あなたのミス例） | 一言対策 |
+#### 4. 手紙: 病気の友人へ
+📍 **状況**: 検証結果を「次のミーティングで共有する」と述べる場面。
+
+- ❌ **誤り**: share that consequence in next meeting
+- ✅ **正しい**: **share the results in the next meeting**
+- 💡 **なぜ**: 特定の次回会合なので the next meeting。結果も自分たちのその結果なので the results。可算名詞には冠詞が必要。
+- 📝 **例文**: *We will share the results in the next meeting.*
+
+#### 19. Task2: グローバル化
+📍 **状況**: 「グローバル化を進めれば」と一般論で語り出す場面。
+
+- ❌ **誤り**: if we have the globalisation
+- ✅ **正しい**: **if we promote globalisation**
+- 💡 **なぜ**: globalisation は抽象・一般概念なので無冠詞。動詞も have より promote が自然。
+- 📝 **例文**: *If we promote globalisation, ideas spread faster.*
+
+#### 23. Task2: グローバル化
+📍 **状況**: 自分の考えを「一番良い案だ」と述べる場面。
+
+- ❌ **誤り**: That is a best idea
+- ✅ **正しい**: **That is the best idea**
+- 💡 **なぜ**: 最上級には the を付ける（the best / the largest）。
+- 📝 **例文**: *That is the best idea I have come up with.*
+
+#### 26. 会話: 多文化の成功例(米国)
+📍 **状況**: 回答の書き出しで国名を挙げる場面。
+
+- ❌ **誤り**: It would be United States of America
+- ✅ **正しい**: **It would be the United States of America**
+- 💡 **なぜ**: 複数形を含む国名には the（the United States, the Netherlands, the Philippines）。
+- 📝 **例文**: *The United States has long been a nation of immigrants.*
+
+#### 29. 会話: 多文化の成功例(米国)
+📍 **状況**: 「最近の米国の状況はよく分からない」と述べる場面。
+
+- ❌ **誤り**: Recent situation in U.S is unknown
+- ✅ **正しい**: **The recent situation in the U.S. is unclear to me**
+- 💡 **なぜ**: 特定の状況なので the。国名は the U.S.。unknown より unclear to me が自然。
+- 📝 **例文**: *The recent situation in the U.S. is unclear to me.*
+
+#### 31. 会話: 多文化の成功例(米国)
+📍 **状況**: 多文化の具体例（イーロン・マスク）を挙げる場面。
+
+- ❌ **誤り**: who is born in diffrerent country
+- ✅ **正しい**: **who was born in a different country**
+- 💡 **なぜ**: 可算名詞 country に a。「生まれた」は過去の受動 was born。
+- 📝 **例文**: *Elon Musk was born in a different country, South Africa.*
+
+#### 46. 手紙: 塾への応募
+📍 **状況**: 「プログラミングを教えられる」とアピールする場面。
+
+- ❌ **誤り**: I can teach the programming
+- ✅ **正しい**: **I can teach programming**
+- 💡 **なぜ**: programming は不可算の活動名。一般論として語るときは無冠詞。
+- 📝 **例文**: *I can teach programming to beginners.*
+
+#### 47. 手紙: 塾への応募
+📍 **状況**: 「モバイルアプリを開発している」と述べる場面。
+
+- ❌ **誤り**: developing moble application
+- ✅ **正しい**: **developing mobile applications**
+- 💡 **なぜ**: スペルは mobile。一般的な「モバイルアプリ」は複数形 applications にする。
+- 📝 **例文**: *I have recently been developing mobile applications.*
+
+---
+
+### コロケーション（18項目）
+_Collocations — 自然に結びつく語の組み合わせ。_
+
+#### 5. 手紙: 病気の友人へ
+📍 **状況**: 検証で得た“成果”を共有すると伝える場面。
+
+- ❌ **誤り**: share that consequence
+- ✅ **正しい**: **share the results / our findings**
+- 💡 **なぜ**: consequence は「（悪い）結果・報い」の意味。研究や実験の「結果・成果」は result(s) / findings を使う。
+- 📝 **例文**: *We are going to share our findings next time.*
+
+#### 6. 手紙: 病気の友人へ
+📍 **状況**: 課題を挙げ終えて「これが私たちの課題です」とまとめる場面。
+
+- ❌ **誤り**: This is our assignments
+- ✅ **正しい**: **These are our assignments**
+- 💡 **なぜ**: assignments（複数）が主語 → These are。指示語・be動詞・名詞の“単複”をそろえる（最重要弱点）。※模範では冗長として削除も可。
+- 📝 **例文**: *These are the tasks we must finish before next week.*
+
+#### 10. Task2: グローバル化
+📍 **状況**: 「グローバルな考えを持つ人と関われば」と述べる場面。
+
+- ❌ **誤り**: people who have the global style
+- ✅ **正しい**: **people who have a global mindset**
+- 💡 **なぜ**: the global style は曖昧。「国際的な考え方を持つ人」は a global mindset が自然。
+- 📝 **例文**: *People with a global mindset adapt quickly to new cultures.*
+
+#### 15. Task2: グローバル化
+📍 **状況**: 統計を根拠に「言語数が年々減っている」と述べる場面。
+
+- ❌ **誤り**: the number of languages are decreasing as time goes by
+- ✅ **正しい**: **the number of languages is decreasing over time**
+- 💡 **なぜ**: 主語の中心は the number（単数）→ is。「時間とともに」は over time が自然。
+- 📝 **例文**: *The number of endangered languages is decreasing over time.*
+
+#### 16. Task2: グローバル化
+📍 **状況**: 「これもグローバル化の問題の一つだ」とまとめる場面。
+
+- ❌ **誤り**: one of the problem
+- ✅ **正しい**: **one of the problems**
+- 💡 **なぜ**: one of the + 複数名詞。「〜のうちの1つ」は必ず複数形。
+- 📝 **例文**: *This is one of the problems caused by globalisation.*
+
+#### 20. Task2: グローバル化
+📍 **状況**: 「グローバル化をさらに進めれば」と述べる場面。
+
+- ❌ **誤り**: if we accelerate more globalization
+- ✅ **正しい**: **if we further accelerate globalisation**
+- 💡 **なぜ**: 「さらに加速する」は further accelerate。accelerate more は不自然。
+- 📝 **例文**: *If we further accelerate globalisation, cooperation will grow.*
+
+#### 22. Task2: グローバル化
+📍 **状況**: 交流機会が「増えるだろう」と予測する場面。
+
+- ❌ **誤り**: is going to be increasing
+- ✅ **正しい**: **will increase**
+- 💡 **なぜ**: 未来の増加は will increase で十分。is going to be increasing は冗長・不自然。
+- 📝 **例文**: *Opportunities for interaction will increase due to globalisation.*
+
+#### 24. Task2: グローバル化
+📍 **状況**: 逆の立場で「進めるべきでない」と主張する場面。
+
+- ❌ **誤り**: we better do not declare and accelerate
+- ✅ **正しい**: **we should not continue to promote and accelerate**
+- 💡 **なぜ**: 助言は should / had better。we better do not は語順が壊れている。
+- 📝 **例文**: *We should not accelerate globalisation without protecting local cultures.*
+
+#### 25. Task2: グローバル化
+📍 **状況**: 「共通言語で世界と対話すべき」と提案する結びの場面。
+
+- ❌ **誤り**: we better do conversation ... speaking common language
+- ✅ **正しい**: **we should communicate ... by speaking a common language**
+- 💡 **なぜ**: do conversation は不自然。communicate / have conversations を使う。a common language と冠詞も必要。
+- 📝 **例文**: *We should communicate with the world by speaking a common language, such as English.*
+
+#### 27. 会話: 多文化の成功例(米国)
+📍 **状況**: アメリカの多文化での成功を説明する場面。
+
+- ❌ **誤り**: successful at multicultural in academia
+- ✅ **正しい**: **successful at embracing multiculturalism in academia**
+- 💡 **なぜ**: multicultural は形容詞。名詞は multiculturalism。「多文化を受け入れる」は embrace multiculturalism。
+- 📝 **例文**: *The country is successful at embracing multiculturalism.*
+
+#### 32. 会話: 多文化の成功例(米国)
+📍 **状況**: 成功例を挙げる導入の場面。
+
+- ❌ **誤り**: the example of person who is succeful
+- ✅ **正しい**: **one example of a successful person**
+- 💡 **なぜ**: 「一例」は one example of a + 名詞。person に a が必要。
+- 📝 **例文**: *One example of a successful immigrant is Elon Musk.*
+
+#### 33. 面接: 日本の人気の祭り
+📍 **状況**: 「日本で一番人気の祭りは花火（大会）だ」と切り出す場面。
+
+- ❌ **誤り**: The most popular festival in Japan is fireworks
+- ✅ **正しい**: **The most popular festival events in Japan are fireworks displays**
+- 💡 **なぜ**: 花火（fireworks）は物であり祭りそのものではない。festival events / fireworks displays と表し、複数なので are。
+- 📝 **例文**: *Some of the most popular summer events in Japan are fireworks displays.*
+
+#### 34. 面接: 日本の人気の祭り
+📍 **状況**: 「花火が各地で開催される」と説明する場面。
+
+- ❌ **誤り**: The fireworks is held at all locations
+- ✅ **正しい**: **The fireworks are held at various locations**
+- 💡 **なぜ**: fireworks は複数扱い → are。all locations（全域）は大げさで、various locations（各地）が自然。
+- 📝 **例文**: *Fireworks are held at various locations across Japan.*
+
+#### 36. 面接: 日本の人気の祭り
+📍 **状況**: 「屋台が出ている」と描写する場面。
+
+- ❌ **誤り**: There are usually food stall on the site
+- ✅ **正しい**: **There are usually food stalls on the street**
+- 💡 **なぜ**: 屋台は複数 stalls。会場の通りは on the street（on the site は工事現場的で不自然）。
+- 📝 **例文**: *There are usually food stalls lining the street.*
+
+#### 37. 面接: 日本の人気の祭り
+📍 **状況**: 「食べながら花火を見られる」と述べる場面。
+
+- ❌ **誤り**: We can see fireworks eating some delicious foods
+- ✅ **正しい**: **We can watch the fireworks while eating delicious food**
+- 💡 **なぜ**: 予定された催しは watch。while がないと「花火が食べている」意味に。food は一般に不可算。
+- 📝 **例文**: *We can watch the fireworks while eating delicious food.*
+
+#### 38. Task1: Facebook円グラフ
+📍 **状況**: 円グラフを描写し始める場面。
+
+- ❌ **誤り**: The left circle graph
+- ✅ **正しい**: **The left pie chart**
+- 💡 **なぜ**: 円グラフは pie chart（circle graph ではない）。IELTS Task1 の必須用語。
+- 📝 **例文**: *The two pie charts compare the ages of Facebook users.*
+
+#### 39. Task1: Facebook円グラフ
+📍 **状況**: 各年齢層の割合を述べる場面。
+
+- ❌ **誤り**: which dominates 51% users
+- ✅ **正しい**: **made up 51% of users / accounted for 51%**
+- 💡 **なぜ**: 割合は make up / account for。dominate は「圧倒的多数を占める」ときだけ。
+- 📝 **例文**: *Users aged 13 to 24 made up 51% of the total.*
+
+#### 40. Task1: Facebook円グラフ
+📍 **状況**: 概要のあと、細部の数値に入る場面。
+
+- ❌ **誤り**: More details, left graph is 51%
+- ✅ **正しい**: **In more detail, the left chart shows 51%**
+- 💡 **なぜ**: 「詳しく見ると」は In more detail / Looking more closely。
+- 📝 **例文**: *In more detail, the youngest group made up just over half.*
+
+---
+
+### 文構造（5項目）
+_Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
+
+#### 30. 会話: 多文化の成功例(米国)
+📍 **状況**: 「トランプ大統領が何を考えているか分からない」と述べる場面。
+
+- ❌ **誤り**: I do not know Presdient Trump thinks
+- ✅ **正しい**: **I do not know what President Trump thinks**
+- 💡 **なぜ**: know の後に節を続けるには what が必要（know + what + 主語 + 動詞）。
+- 📝 **例文**: *I do not know what the government thinks about this issue.*
+
+#### 35. 面接: 日本の人気の祭り
+📍 **状況**: 「田舎でも開催される」と補足する場面。
+
+- ❌ **誤り**: even if there are rual area
+- ✅ **正しい**: **even in rural areas**
+- 💡 **なぜ**: スペルは rural。even if there are は文構造が崩れる。even in rural areas で場所を自然につなぐ。
+- 📝 **例文**: *Fireworks are held everywhere, even in rural areas.*
+
+#### 41. Task1: Facebook円グラフ
+📍 **状況**: 「66〜80歳の利用が最も少ない」と述べる場面。
+
+- ❌ **誤り**: aged for 66 to 80 people use less this Facebook
+- ✅ **正しい**: **people aged 66 to 80 used Facebook the least**
+- 💡 **なぜ**: 年齢は people aged 66 to 80（for は不要）。過去データなので used。語順は people aged ... used Facebook。
+- 📝 **例文**: *People aged 66 to 80 used Facebook the least.*
+
+#### 42. 手紙: 塾への応募
+📍 **状況**: 自己紹介＋志望動機の書き出し。
+
+- ❌ **誤り**: I am Kaito from Japan who am intersted
+- ✅ **正しい**: **I am Kaito from Japan, and I am interested**
+- 💡 **なぜ**: who am は不可。自分のことは I を主語に and I am interested と続ける。
+- 📝 **例文**: *My name is Kaito, and I am interested in your school.*
+
+#### 48. 手紙: 塾への応募
+📍 **状況**: 「ITを教えるのに適任」とアピールする場面。
+
+- ❌ **誤り**: I can suitable for teaching
+- ✅ **正しい**: **I am suitable / well qualified for teaching**
+- 💡 **なぜ**: suitable は形容詞なので be動詞が必要（can は不可）。I am suitable for + 名詞。
+- 📝 **例文**: *I am well suited to teaching IT to children.*
+
+---
+
+## 3. 模範解答（原文 → 自然な表現 → 改良版）
+
+### 手紙: 病気の友人への研究連絡（150語以上）
+> 🖊 **設問**: Write an email to a friend. Begin: Dear ......,
+
+**① あなたの原文**
+
+> Dear My friend, Hello, how are you, my firend? I am the leader of a science project. I have heard you are sick. I am worry about you. I would like to infrom you three items; today's content of group work, plans to do at the next meeting and assignments for the next meeting. First of all, about today's content of group work, we conducted the validation of micro-scope accuracy. You know we have collected some data? We used that data for validation. We are going to share that consequence in next meeting. Second, about plans to do at next meeting is going to be a discussion sharing about the collected data we conducted. Lastly, the assignments for the next meeting would be reading and analyzing the collected data. This is our assignments. I hope you will come back a school again! See you later! Sincrely,
+
+**② 自然な表現**
+
+> Dear Ryotaro, I was informed that you are not feeling well, which is why you were unable to attend today's group meeting for our science project. I am sorry to hear that, and I wish you a speedy recovery. I would like to inform you of three items: today's content of group work, plans for the next meeting, and assignments for the next meeting. First of all, regarding today's content of group work, we conducted the validation of microscope accuracy. You know we have collected some data for validation. We are going to share the results in the next meeting. Second, the plan for the next meeting is going to be a discussion about the data we collected. Lastly, the assignments for the next meeting will be reading and analyzing the collected data. I hope you will come back to school again! See you later! Sincerely, Kaito
+
+---
+
+### Task2: グローバル化の利点と欠点（250語以上）
+> 🖊 **設問**: Give reasons for your answer and include relevant examples from your own knowledge or experience.
+
+**① あなたの原文**
+
+> There are good points and bad points respectively. First of all, in terms of good points, we can accelerate the speed of transaction which means that you can do communication easily and you can do task faster due to globalisation. If we communicate with other poeple who have the global style, we can easily and faster communicate each other. And also, we can understand each other more deeply than other style. On the other hand, there are some bad points. So, if we have the globalisation, culture of local or rural area may be in risk of dissapperment. For example, I have heard of that bad points from people who lives Africa on YouTube. And also I have noticed some statistics show that the number of languages are decreasing as time goes by. So, this is also one of the problem attributed from globalisation. In summarization, there are good points and bad points respectively. Maybe, if we accelerate more globalization, but we have the chance to produce some innovative idea discussing with each other which is come from the good aspect of globalization, understanding of diversity. And also, the opportunities of interaction of other people is going to be increasing due to globalisation. That is a best idea I have come up with. Otherwise, we better do not declare and accelerate the globalisation. In order to vitalize the opportunities of globalisation, we better do conversation from all over the world speaking common language, for example, English that leads to world's development.
+
+**② 自然な表現**
+
+> There are both good points and bad points. First of all, one good point is that we can accelerate the speed of transactions, which means that we can communicate more easily and complete tasks more quickly due to globalisation. If we communicate with other people who have a global mindset, we can communicate with each other more easily and efficiently. In addition, we can understand each other more deeply than we could with people who have different perspectives. On the other hand, there are some drawbacks. If we promote globalisation, the cultures of local or rural areas may be at risk of disappearance. I have heard about these drawbacks from people who live in Africa on YouTube. I have also noticed that some statistics show that the number of languages is decreasing over time. So, this is also one of the problems attributed to globalisation. In summary, there are both advantages and disadvantages. Maybe, if we further accelerate globalization, we will have more opportunities to produce innovative ideas by discussing them with one another. This is one of the positive aspects of globalisation because it promotes an understanding of diversity. In addition, opportunities for interaction with other people will increase due to globalisation. That is the best idea I have come up with. Otherwise, we should not continue to promote and accelerate globalisation. In order to maximize the benefits of globalisation, we should communicate with people from all over the world by speaking a common language, such as English, which can contribute to global development.
+
+---
+
+### 会話返信: 多文化都市の成功例（短答）
+> 🖊 **設問**: If you had to choose one real city or country as an example of multicultural success, which one would it be and why?
+
+**① あなたの原文**
+
+> It would be United States of America. Because this country is succesful at multicultural in academia and industry. This country developed by adapting immigration. Recent situation in U.S is unknown and I do not know Presdient Trump thinks. But actually the example of person who is succeful and benefited from multicultural cities features is Eron Musk who is born in diffrerent country, South Africa.
+
+**② 自然な表現**
+
+> It would be the United States of America because this country is successful at embracing multiculturalism in academia and industry. This country has developed by adapting to immigration. The recent situation in the U.S. is unclear to me, and I do not know what President Trump thinks. But actually, one example of a person who is successful and has benefited from the multicultural nature of American cities is Elon Musk, who was born in a different country, South Africa.
+
+---
+
+### 面接: 母国で人気の祭り（短答）
+> 🖊 **設問**: What is the most popular festival in your home country? Why?
+
+**① あなたの原文**
+
+> The most popular festival in Japan is fireworks. The fireworks is held at all locations even if there are rual area. There are usually food stall on the site. We can see fireworks eating some delicious foods.
+
+**② 自然な表現**
+
+> The most popular festival events in Japan are fireworks displays. The fireworks are held at various locations, even in rural areas. There are usually food stalls on the street. We can watch the fireworks while eating some delicious food.
+
+**③ 改良版（Band 7+）**
+
+> Some of the most popular summer festivals in Japan center around spectacular fireworks displays. These events take place all over the country, even in remote rural towns. The festival grounds are usually lined with traditional food stalls, allowing you to snack on local delicacies while taking in the show.
+
+---
+
+### Task1: Facebook利用者の年齢層（円グラフ）（150語以上）
+> 🖊 **設問**: Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+**① あなたの原文**
+
+> This graph is about the age range of Facebook users in 2005 and 2015. The left circle graph is about 2005 data which dominates 51% users for Facebook users. On the other hand, the right graph dominates 47% in 2015 data. That's a big difference between them. Interestingly, each graph shows that aged for 66 to 80 people use less this Facebook. More details, left graph is 51% for 13 to 24 age, 32% for 25 to 40 age, 16% for 41 to 65 age, and 1% for 66 to 80 age. Right graph is 31% for 13 to 24 age, 47% for 25 to 40 age, 19% for 41 to 65 age, and 3% for 66 to 80.
+
+**② 自然な表現**
+
+> These pie charts show information on the age range of Facebook users in 2005 and 2015. The left pie chart shows 2005 data, which indicates that Facebook users aged 13 to 24 were the dominant group. On the other hand, the right pie chart for 2015 data shows that the majority of Facebook users were aged 25 to 40. Interestingly, each pie chart shows that people aged 66 to 80 used Facebook less than the other three age groups. In more detail, for the left pie chart, it can be seen that the 13 to 24 age group made up 51% of all Facebook users, followed by the 25 to 40 age group with 32%. The remaining two age groups, 41 to 65 and 66 to 80, accounted for 16% and 1% of users, respectively. Turning to the right pie chart, a noticeable change can be observed. The number of users aged 13 to 24 fell to 31%, while that of users aged 25 to 40 rose to 47%. The proportions of users aged 41 to 65 and 66 to 80 also increased, albeit slightly. The 41 to 65 age group increased to 19%, and the 66 to 80 age group climbed to 3%.
+
+---
+
+### 手紙: 塾への応募（フォーマル）（150語以上）
+> 🖊 **設問**: Write a letter. Begin: Dear Sir or Madam,
+
+**① あなたの原文**
+
+> Dear Sir, I am Kaito from Japan who am intersted in your cram school. I am curious your cram school seeing its advertisement. I have graduated from graduated school in Japan, studying about IT. So I can teach the programming and IT. And Also, I recently have been developing moble application, so I can suitable for teaching IT to the children who are interested in IT. Sincerely,
+
+**② 自然な表現**
+
+> Dear Sir, I am Kaito from Japan, and I am interested in your cram school. I became curious about your cram school after seeing its advertisement. I graduated from graduate school in Japan, studying IT. So I can teach programming and IT. Also, I have recently been developing mobile applications, so I am suitable for teaching IT to children who are interested in IT. Sincerely, Kaito
+
+---
+
+## 4. 苦手ポイント TOP5
+
+| 順位 | 弱点 | 症状 | 対策 |
 |:---:|---|---|---|
-| **1** | **主語と動詞の一致 / 単数・複数** | `the number ... are`, `who lives`, `one of the problem`, `food stall` | 名詞を書いたら「1つ？複数？」、動詞を書いたら「主語は単数？」を毎回自問 |
-| **2** | **名詞を無理に動詞化（品詞）** | `do communication`, `do task`, `do conversation` | 「〜する」は動詞1語を探す（communicate / complete / converse） |
-| **3** | **前置詞のセット** | `communicate each other`, `in risk`, `attributed from`, `curious your` | 動詞・形容詞を**前置詞ごと**暗記（communicate **with** / at risk / attribute **to** / curious **about**） |
-| **4** | **冠詞（a / the / 無冠詞）** | `the globalisation`, `United States`, `teach the programming`, `common language` | 抽象名詞＝無冠詞、可算単数＝a、複数国名＝the |
-| **5** | **be動詞・語順の欠落** | `I can suitable`, `who am interested`, `I do not know President thinks` | 「英文には動詞が必ず1つ」。関係詞の後は `what/who + 主語 + 動詞` |
+| **1** | **主語と動詞の一致 / 単数・複数** | `the number ... are / These are / fireworks are / one of the problems / food stalls` | 名詞を書いたら「1つ？複数？」、動詞を書いたら「主語は単数？」を毎回自問 |
+| **2** | **名詞を無理に動詞化・品詞ミス** | `do communication / do conversation / worry→worried / disappearance / In summary` | 「〜する」は動詞1語を探す。状態は形容詞（worried）、まとめは In summary |
+| **3** | **前置詞のセット** | `inform of / at risk / attributed to / adapt to / communicate with / live in / curious about / study∅` | 動詞・形容詞を前置詞ごと暗記。study は about不要、come back to school |
+| **4** | **冠詞（a / the / 無冠詞）** | `the U.S. / the best / a common language / teach programming / the microscope` | 抽象名詞＝無冠詞、可算単数＝a、最上級・特定＝the、複数国名＝the |
+| **5** | **be動詞・語順・文構造の欠落** | `I can suitable / who am interested / know what he thinks / aged for 66 to 80` | 英文には動詞が必ず1つ。形容詞の前に be動詞。know の後は what+主語+動詞 |
 
 ---
 
 ## 5. 1週間 練習メニュー
 
-> 1日 **30〜40分**。各日「①インプット10分 → ②書く15分 → ③自己添削10分」の3ステップ。
+1日30〜40分：①インプット10分 → ②書く15分 → ③自己添削10分
 
 | 曜日 | テーマ | やること |
 |:---:|---|---|
-| **月** | 主語・動詞の一致 | 上のTOP1の例文を10文書き換え。`the number of / a number of` の違いを5文ずつ作る |
-| **火** | 品詞（動詞化ミス） | `do + 名詞` を正しい動詞に直すドリル20問（communication→communicate 等）。自分の過去作文から10個抜き出す |
-| **水** | 前置詞コロケーション | 動詞＋前置詞リスト20個を暗記→穴埋め自作。communicate with / attribute to / depend on / result in など |
-| **木** | 冠詞 | 昨日までの自分の英文を印刷し、名詞に○を付けて a/the/無冠詞を判定するだけの日 |
-| **金** | Task 2 本番演習 | Globalisationの問題を **40分**で250語。書き終えたら本ノートのA〜Dで自己チェック |
-| **土** | Task 1 本番演習 | グラフ問題を **20分**で150語。`account for / make up / whereas / compared with` を必ず3回使う |
-| **日** | 復習＆音読 | 今週直した「After 模範文」を**音読5回＋書き写し1回**。正しい語順を体に入れる |
-
-**毎日の合言葉（書き終わったら必ず確認）**
-1. 動詞は入っているか？
-2. 主語は単数か複数か → 動詞は合っているか？
-3. 名詞は a / the / 無冠詞のどれか？
-4. その動詞・形容詞に前置詞は要らないか？
+| **月** | 主語・動詞の一致 | TOP1の例文を10文書き換え。the number of / a number of・This is/These are の違いを5文ずつ作る |
+| **火** | 品詞（動詞化ミス） | do + 名詞 を正しい動詞に直すドリル20問。worry→worried など形容詞化も練習 |
+| **水** | 前置詞コロケーション | inform of / adapt to / attributed to / communicate with / curious about など20個を暗記→穴埋め自作 |
+| **木** | 冠詞 | 自分の英文を印刷し、名詞に○を付けて a / the / 無冠詞を判定するだけの日 |
+| **金** | Task2 本番演習 | グローバル化の問題を40分で250語。書き終えたら模範（自然な表現）と照合 |
+| **土** | Task1 本番演習 | グラフ問題を20分で150語。pie chart / made up / accounted for / whereas を必ず使う |
+| **日** | 復習＆音読 | 直した模範文（自然＋改良）を音読5回＋書き写し1回。正しい語順を体に入れる |
 
 ---
 
-## 6. Band 6.5 達成のための優先順位
+## 6. Band 6.5 優先順位
 
-IELTSは4項目（Task Achievement / Coherence / Lexical Resource / **Grammar**）の平均。あなたは内容・構成は既に6.5圏内なので、**文法の失点を止めるのが最短ルート**です。
-
-### 🥇 最優先（今すぐ効く・2週間で+0.5狙える）
-1. **主語動詞の一致 & 単複**（TOP1）
-   → これだけで1エッセイあたりのミスが半分近く減る。Grammar評価が最も上がる。
-2. **be動詞・動詞の欠落をゼロに**（`I am suitable`, `what he thinks`）
-   → 「文に動詞1つ」を徹底。基本ミスは採点者の印象を大きく下げるため即修正。
+### 🥇 最優先（2週間で+0.5狙える）
+- 主語動詞の一致 & 単複（失点が半分近く減る）
+- be動詞・動詞の欠落をゼロに（文に動詞1つを徹底）
 
 ### 🥈 次点（語彙の質・自然さで+0.5）
-3. **前置詞コロケーションの固定化**（communicate with 等）
-4. **冠詞の判断**（抽象名詞は無冠詞、可算単数は a）
+- 前置詞コロケーションの固定化（inform of / adapt to など）
+- 冠詞の判断（抽象名詞は無冠詞、可算単数は a、特定は the）
 
-### 🥉 6.5→7.0を見据えて（余裕が出たら）
-5. **Task 1専用語彙**（pie chart / account for / whereas）と、**Task 2で主観を抑えたアカデミックな言い回し**
-6. 複文の多様化（`which`, `although`, `not only ... but also`）を**正確に**使う
-
-### まとめの一言
-> あなたのアイデアはすでにBand 7級。**「正確さ」だけがブレーキ**です。上の🥇2つを2週間潰せば、Band 6.5は現実的に届きます。まずは「動詞と主語」を制する — ここが全ての土台です。
+### 🥉 6.5→7.0（余裕が出たら）
+- Task1専用語彙（pie chart / made up / accounted for / whereas）
+- 改良版のような言い換え・複文（which / albeit / turning to）を正確に
 
 ---
 
-*このノートはMarkdownです。VS Codeの「Markdown PDF」拡張、または `pandoc IELTS_弱点改善ノート.md -o note.pdf` でPDF化できます。*
+_このノートはMarkdownです。VS Codeの「Markdown PDF」拡張、または `node build-pdf.js` → Chrome印刷でPDF化できます。_

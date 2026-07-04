@@ -108,9 +108,18 @@
   .pr h3{margin:0 0 6px; font-size:15px;}
   .pr .pd{font-size:12px; color:var(--sub); font-weight:400;}
   .pr ul{margin:0; padding-left:18px; font-size:13px;}
-  .es{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:10px;}
+  .es{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-bottom:12px;}
   .es h3{margin:0 0 6px; font-size:14px; color:var(--accent);}
   .es p{margin:0; font-size:13px; color:var(--ink);}
+  .es .ewords{font-size:11px; color:var(--sub); font-weight:400;}
+  .eprompt{font-size:12px; color:var(--sub); background:var(--card2); border-radius:8px; padding:7px 10px; margin-bottom:8px;}
+  .etoggle{font-size:12px; color:var(--brand); cursor:pointer; margin:2px 0 8px; user-select:none;}
+  .eblock{font-size:13px; line-height:1.65; border-radius:9px; padding:10px 12px; margin-bottom:8px;}
+  .etag{display:inline-block; font-size:11px; font-weight:700; border-radius:6px; padding:1px 7px; margin-right:6px;}
+  .etag.bad{background:#3a2530; color:var(--bad);} .etag.good{background:#1e3327; color:var(--good);} .etag.imp{background:#2a2440; color:#c084fc;}
+  .eblock.eorig{background:rgba(255,107,107,.07); color:var(--sub);}
+  .eblock.enat{background:rgba(74,222,128,.07); color:var(--ink);}
+  .eblock.eimp{background:rgba(192,132,252,.08); color:var(--ink);}
   .note{font-size:12px; color:var(--sub); text-align:center; margin:14px 0;}
 
   /* Bottom nav */
@@ -140,6 +149,7 @@
     <div class="quick">
       <button onclick="go('cards')">📇 カードで復習<span id="qc-cards"></span></button>
       <button onclick="startQuiz()">⚡ クイズに挑戦<span>❌を見て✅を当てる</span></button>
+      <button onclick="go('models')">📖 模範解答<span>Before→自然→改良</span></button>
       <button onclick="go('top5')">🎯 苦手TOP5<span>最優先の弱点</span></button>
       <button onclick="go('plan')">📅 練習メニュー<span>1週間＋優先順位</span></button>
     </div>
@@ -171,8 +181,13 @@
     <div id="weeklist"></div>
     <h2 style="margin-top:22px;">Band 6.5 優先順位</h2>
     <div id="priolist"></div>
-    <h2 style="margin-top:22px;">修正済み 模範文（After）</h2>
-    <div id="essaylist"></div>
+  </section>
+
+  <!-- MODELS -->
+  <section class="view sec" id="v-models">
+    <h2>模範解答（6設問）</h2>
+    <div class="note" style="text-align:left;margin:0 0 10px;">各設問を「① あなたの原文 → ② 自然な表現 → ③ 改良版」で比較。タップで原文の開閉。</div>
+    <div id="modellist"></div>
   </section>
 </main>
 
@@ -180,6 +195,7 @@
   <button data-v="home" class="on" onclick="go('home')"><span class="ic">🏠</span>ホーム</button>
   <button data-v="cards" onclick="go('cards')"><span class="ic">📇</span>カード</button>
   <button data-v="quiz" onclick="go('quiz')"><span class="ic">⚡</span>クイズ</button>
+  <button data-v="models" onclick="go('models')"><span class="ic">📖</span>模範</button>
   <button data-v="top5" onclick="go('top5')"><span class="ic">🎯</span>TOP5</button>
   <button data-v="plan" onclick="go('plan')"><span class="ic">📅</span>練習</button>
 </nav>
@@ -187,8 +203,8 @@
 <script src="data.js"></script>
 <script>
 const D = window.IELTS_DATA;
-const cats = ["品詞","前置詞","冠詞","コロケーション"];
-const catColor = {"品詞":"#3d9bff","前置詞":"#ffcf5c","冠詞":"#4ade80","コロケーション":"#ff8fab"};
+const cats = ["品詞","前置詞","冠詞","コロケーション","文構造"];
+const catColor = {"品詞":"#3d9bff","前置詞":"#ffcf5c","冠詞":"#4ade80","コロケーション":"#ff8fab","文構造":"#c084fc"};
 const LS = "ielts_note_progress_v1";
 const LSW = "ielts_note_weak_v1";
 let learned = JSON.parse(localStorage.getItem(LS) || "{}");
@@ -318,9 +334,21 @@ function buildPlan(){
     <div class="day"><div class="d">${w.day}</div><div><div class="th">${esc(w.theme)}</div><div class="ts">${esc(w.task)}</div></div></div>`).join('');
   document.getElementById('priolist').innerHTML = D.priority.map(p=>`
     <div class="pr"><h3>${esc(p.tier)} <span class="pd">(${esc(p.desc)})</span></h3><ul>${p.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join('');
-  document.getElementById('essaylist').innerHTML = D.essays.map(e=>`
-    <div class="es"><h3>${esc(e.title)}</h3><p>${esc(e.after)}</p></div>`).join('');
 }
+// MODELS（模範解答）
+let openModel = {};
+function buildModels(){
+  document.getElementById('modellist').innerHTML = D.essays.map(e=>`
+    <div class="es">
+      <h3>${esc(e.title)} <span class="ewords">${esc(e.words||'')}</span></h3>
+      <div class="eprompt">🖊 ${esc(e.prompt)}</div>
+      <div class="etoggle" onclick="toggleModel('${e.id}')">${openModel[e.id]?'▲ 原文を隠す':'▼ あなたの原文を見る'}</div>
+      ${openModel[e.id]?`<div class="eblock eorig"><span class="etag bad">① 原文</span>${esc(e.original)}</div>`:''}
+      <div class="eblock enat"><span class="etag good">② 自然な表現</span>${esc(e.natural)}</div>
+      ${e.improved?`<div class="eblock eimp"><span class="etag imp">③ 改良版（Band 7+）</span>${esc(e.improved)}</div>`:''}
+    </div>`).join('');
+}
+function toggleModel(id){ openModel[id]=!openModel[id]; buildModels(); }
 
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function go(v){
@@ -334,7 +362,7 @@ function go(v){
   window.scrollTo(0,0);
 }
 
-buildHome(); buildFilter(); buildCards(); buildTop5(); buildPlan(); updateProgress();
+buildHome(); buildFilter(); buildCards(); buildTop5(); buildPlan(); buildModels(); updateProgress();
 </script>
 </body>
 </html>
