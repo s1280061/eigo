@@ -131,6 +131,29 @@ async def tts(text, voice, rate="+0%"):
     return AudioSegment.from_file(p, format="mp3")
 def sil(ms): return AudioSegment.silent(duration=ms)
 
+# 日本語の中の英単語は英語音声で読む（英語部分がカタカナ発音になるのを防ぐ）
+_EN_SPAN = re.compile(r"[A-Za-z][A-Za-z0-9'’.\-]*(?:[ /+&]+[A-Za-z0-9'’.\-]+)*")
+async def tts_mixed(text):
+    parts, idx = [], 0
+    for m in _EN_SPAN.finditer(text):
+        if m.start() > idx and text[idx:m.start()].strip():
+            parts.append(("ja", text[idx:m.start()]))
+        parts.append(("en", m.group()))
+        idx = m.end()
+    if idx < len(text) and text[idx:].strip():
+        parts.append(("ja", text[idx:]))
+    audio = sil(1)
+    for lang, t in parts:
+        t = t.strip()
+        if not t: continue
+        # 1〜2文字だけの英字（記号の断片等）は日本語音声に回す
+        if lang == "en" and len(re.sub(r"[^A-Za-z]", "", t)) >= 2:
+            audio += await tts(t, EN_VOICE, EN_RATE)
+        else:
+            audio += await tts(t, JA_VOICE)
+        audio += sil(80)
+    return audio
+
 async def build_audio(groups):
     print("audio:")
     for g in groups:
@@ -139,7 +162,7 @@ async def build_audio(groups):
         a.export(os.path.join(ACLIPS, f"{gkey(g)}_00.mp3"), format="mp3", bitrate="128k")
         for i, s in enumerate(g["slides"], 1):
             en = await tts(s["ex"], EN_VOICE, EN_RATE)
-            seg = en + sil(500) + en + sil(700) + await tts(s["why"], JA_VOICE) + sil(2500)
+            seg = en + sil(500) + en + sil(700) + await tts_mixed(s["why"]) + sil(2500)
             seg.export(os.path.join(ACLIPS, f"{gkey(g)}_{i:02d}.mp3"), format="mp3", bitrate="128k")
         print(f"  {g['cat']}: audio done")
 
