@@ -1,3 +1,9 @@
 audio/*.mp3
 audio_content.json
 print.html
+video/slides/
+video/audio/
+video/clips/
+video/*.mp4
+video/_slide.html
+video/concat.txt
