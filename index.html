@@ -237,7 +237,7 @@ function markLearned(id,e){ e.preventDefault(); e.stopPropagation(); learned[id]
 let quizOrder=[], qi=0;
 function startQuiz(){
   quizOrder = [...D.mistakes].sort(()=>Math.random()-0.5);
-  qi=0; go('quiz'); renderQuiz();
+  qi=0; renderQuiz(); go('quiz');
 }
 function renderQuiz(){
   const w=document.getElementById('quizwrap');
@@ -293,6 +293,8 @@ function go(v){
   document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));
   document.getElementById('v-'+v).classList.add('on');
   document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on', b.dataset.v===v));
+  // クイズ画面に来たら、まだ始まっていなければ自動でスタート
+  if(v==='quiz' && document.getElementById('quizwrap').children.length===0){ startQuiz(); }
   window.scrollTo(0,0);
 }
 
