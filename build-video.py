@@ -22,14 +22,16 @@ EN_RATE = "-6%"
 with open(os.path.join(BASE, "video-cards.json"), encoding="utf-8") as f:
     C = json.load(f)
 
-# ---- 差分ハイライト: right の中で wrong に無い語を赤下線にする ----
+# ---- 差分ハイライト: wrong に無い語（＝直した箇所）を赤下線にする ----
 def _norm(w): return re.sub(r"[^0-9a-zA-Z]", "", w).lower()
-def highlight(wrong, right):
+def diffwords(wrong, right):
     wset = set(_norm(w) for w in wrong.split() if _norm(w))
+    return set(_norm(w) for w in right.split() if _norm(w) and _norm(w) not in wset)
+def hl_words(text, dset):
     out = []
-    for w in right.split():
+    for w in text.split():
         n = _norm(w)
-        if n and n not in wset:
+        if n and n in dset:
             out.append(f'<span class="hl">{html.escape(w)}</span>')
         else:
             out.append(html.escape(w))
@@ -45,6 +47,7 @@ def title_html(g):
     </div></body></html>"""
 
 def card_html(g, s, idx, total):
+    dset = diffwords(s['wrong'], s['right'])
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8">{_css(g['color'])}</head><body>
     <div class="deco1"></div><div class="deco2"></div><div class="deco3" style="background:{g['color']}22"></div>
     <div class="brand">IELTS 弱点カード</div>
@@ -54,14 +57,13 @@ def card_html(g, s, idx, total):
       <span class="count">{idx} / {total}</span>
     </div>
     <div class="wrap">
-      <div class="wrong">&#10060; {html.escape(s['wrong'])}</div>
-      <div class="right">&#9989; {highlight(s['wrong'], s['right'])}</div>
+      <div class="fx-wrong">&#10060; {html.escape(s['wrong'])}</div>
+      <div class="fx-right">&#9989; {hl_words(s['right'], dset)}</div>
+      <div class="hero">&#128266; {hl_words(s['ex'], dset)}</div>
       <div class="ctx">&#128205; {html.escape(s['ctx'])}</div>
-      <div class="kaisetsu">
-        <div class="k-why"><span class="k-label" style="color:{g['color']}">&#128161; 解説</span>{html.escape(s['why'])}</div>
-        <div class="k-ex">&#128221; {html.escape(s['ex'])}</div>
-      </div>
-    </div></body></html>"""
+    </div>
+    <div class="kaisetsu"><span class="k-label" style="color:{g['color']}">&#128161; 解説</span>{html.escape(s['why'])}</div>
+    </body></html>"""
 
 def _css(color):
     return f"""<style>
@@ -78,15 +80,16 @@ html,body{{width:1280px;height:720px;overflow:hidden;background:#fff;
 .cat-pill.sm{{font-size:17px;padding:4px 14px;}}
 .head .topic{{color:#5b6472;font-size:20px;font-weight:600;}}
 .head .count{{margin-left:auto;color:#aab3c0;font-size:18px;font-weight:700;}}
-.wrap{{position:absolute;top:104px;left:80px;right:80px;}}
-.wrong{{font-size:34px;font-weight:700;color:#9aa4b2;text-decoration:line-through;text-decoration-color:#d98a8a;}}
-.right{{margin-top:14px;font-size:52px;font-weight:800;color:#141414;line-height:1.15;}}
-.right .hl{{color:#d81f1f;text-decoration:underline;text-decoration-thickness:5px;text-underline-offset:7px;}}
-.ctx{{position:absolute;top:326px;left:80px;right:80px;font-size:30px;font-weight:800;color:#1731c8;line-height:1.4;}}
-.kaisetsu{{position:absolute;top:452px;left:80px;right:80px;background:#f1f4f9;border-left:8px solid {color};
+.wrap{{position:absolute;top:92px;left:80px;right:80px;}}
+.fx-wrong{{font-size:25px;font-weight:600;color:#9aa4b2;text-decoration:line-through;text-decoration-color:#d9a0a0;}}
+.fx-right{{margin-top:6px;font-size:28px;font-weight:800;color:#3a4048;}}
+.fx-right .hl{{color:#d81f1f;}}
+.hero{{margin-top:26px;font-size:56px;font-weight:800;color:#111;line-height:1.2;}}
+.hero .hl{{color:#d81f1f;text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:8px;}}
+.ctx{{margin-top:26px;font-size:28px;font-weight:800;color:#1731c8;line-height:1.4;}}
+.kaisetsu{{position:absolute;top:520px;left:80px;right:80px;background:#f1f4f9;border-left:8px solid {color};
   border-radius:10px;padding:18px 24px;font-size:23px;line-height:1.5;color:#2a2a2a;}}
 .kaisetsu .k-label{{font-weight:800;margin-right:10px;}}
-.kaisetsu .k-ex{{margin-top:8px;color:#4a5568;font-style:italic;font-size:21px;}}
 .title-wrap{{position:absolute;top:0;left:0;width:1280px;height:720px;display:flex;flex-direction:column;
   align-items:center;justify-content:center;}}
 .cat-pill{{margin-bottom:22px;}}
@@ -167,6 +170,6 @@ def main():
         groups = [C["groups"][idx]]
     if mode in ("slides","all"): build_slides(groups)
     if mode in ("audio","all"): asyncio.run(build_audio(groups))
-    if mode == "all": assemble(groups)
+    if mode in ("assemble","all"): assemble(groups)
 
 main()
