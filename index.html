@@ -143,7 +143,8 @@
       <button onclick="go('top5')">🎯 苦手TOP5<span>最優先の弱点</span></button>
       <button onclick="go('plan')">📅 練習メニュー<span>1週間＋優先順位</span></button>
     </div>
-    <div class="note">スマホのホーム画面に追加すると、アプリのように起動できます。</div>
+    <button id="weakbtn" onclick="startQuiz(true)" style="display:none;width:100%;margin-top:12px;background:#3a2530;border:1px solid var(--bad);color:var(--bad);border-radius:14px;padding:16px;font-size:15px;font-weight:700;cursor:pointer;">⚠️ 苦手だけ復習（<span id="weakbtn-n"></span>）</button>
+    <div class="note">スマホのホーム画面に追加すると、アプリのように起動できます。進捗・苦手はこの端末に保存されます。</div>
   </section>
 
   <!-- CARDS -->
@@ -189,15 +190,25 @@ const D = window.IELTS_DATA;
 const cats = ["品詞","前置詞","冠詞","コロケーション"];
 const catColor = {"品詞":"#3d9bff","前置詞":"#ffcf5c","冠詞":"#4ade80","コロケーション":"#ff8fab"};
 const LS = "ielts_note_progress_v1";
+const LSW = "ielts_note_weak_v1";
 let learned = JSON.parse(localStorage.getItem(LS) || "{}");
-function save(){ localStorage.setItem(LS, JSON.stringify(learned)); updateProgress(); }
+let weak = JSON.parse(localStorage.getItem(LSW) || "{}");
+function save(){
+  localStorage.setItem(LS, JSON.stringify(learned));
+  localStorage.setItem(LSW, JSON.stringify(weak));
+  updateProgress();
+}
+function weakCount(){ return D.mistakes.filter(m=>weak[m.id]).length; }
 function updateProgress(){
   const total = D.mistakes.length;
   const done = D.mistakes.filter(m=>learned[m.id]).length;
+  const wk = weakCount();
   const pct = Math.round(done/total*100);
   document.getElementById('progbar').style.width = pct+"%";
-  document.getElementById('progtxt').textContent = `習得 ${done} / ${total} 項目（${pct}%）`;
+  document.getElementById('progtxt').textContent = `習得 ${done} / ${total} 項目（${pct}%）` + (wk?` ・ ⚠️苦手 ${wk}`:'');
   const qc = document.getElementById('qc-cards'); if(qc) qc.textContent = `${done}/${total} 習得済み`;
+  const wb = document.getElementById('weakbtn');
+  if(wb){ wb.style.display = wk?'block':'none'; document.getElementById('weakbtn-n').textContent = `${wk}問`; }
 }
 
 // HOME
@@ -213,17 +224,18 @@ function buildHome(){
 // CARDS
 let curCat = "すべて";
 function buildFilter(){
-  const opts = ["すべて",...cats];
+  const wk = weakCount();
+  const opts = ["すべて",...cats, ...(wk?["⚠️苦手"]:[])];
   document.getElementById('catfilter').innerHTML = opts.map(c=>
-    `<button class="${c===curCat?'on':''}" onclick="setCat('${c}')">${c}</button>`).join('');
+    `<button class="${c===curCat?'on':''}" onclick="setCat('${c}')">${c}${c==='⚠️苦手'?`(${wk})`:''}</button>`).join('');
 }
 function setCat(c){ curCat=c; buildFilter(); buildCards(); }
 function buildCards(){
-  const list = D.mistakes.filter(m=>curCat==="すべて"||m.cat===curCat);
+  const list = D.mistakes.filter(m=> curCat==="すべて" ? true : curCat==="⚠️苦手" ? weak[m.id] : m.cat===curCat );
   document.getElementById('cardlist').innerHTML = list.map(m=>`
     <div class="mcard ${learned[m.id]?'open':''}" id="c-${m.id}" onclick="toggleCard('${m.id}')">
       <span class="catlab" style="color:${catColor[m.cat]}">${m.cat}</span>
-      <div class="mid">${m.id} ${learned[m.id]?'✓ 習得':''}</div>
+      <div class="mid">${m.id} ${learned[m.id]?'<span style="color:var(--good)">✓ 習得</span>':''} ${weak[m.id]?'<span style="color:var(--bad)">⚠️ 苦手</span>':''}</div>
       ${m.topic?`<div class="ctopic">📍 ${esc(m.topic)}</div>`:''}
       ${m.ctx?`<div class="cctx">${esc(m.ctx)}</div>`:''}
       <div class="bad">❌ ${esc(m.wrong)}</div>
@@ -237,25 +249,34 @@ function buildCards(){
     </div>`).join('');
 }
 function toggleCard(id){ document.getElementById('c-'+id).classList.toggle('open'); }
-function markLearned(id,e){ e.preventDefault(); e.stopPropagation(); learned[id]=!learned[id]; save(); buildCards(); }
+function markLearned(id,e){ e.preventDefault(); e.stopPropagation(); learned[id]=!learned[id]; if(learned[id]) delete weak[id]; save(); buildFilter(); buildCards(); }
 
 // QUIZ
-let quizOrder=[], qi=0;
-function startQuiz(){
-  quizOrder = [...D.mistakes].sort(()=>Math.random()-0.5);
+let quizOrder=[], qi=0, quizMode='all';
+function startQuiz(weakOnly){
+  if(weakOnly){
+    const pool = D.mistakes.filter(m=>weak[m.id]);
+    if(pool.length===0){ alert('⚠️苦手マークはまだありません。まず通常クイズで「まだ不安」を押すと、ここに苦手が溜まっていきます。'); return; }
+    quizOrder = pool.sort(()=>Math.random()-0.5); quizMode='weak';
+  } else {
+    quizOrder = [...D.mistakes].sort(()=>Math.random()-0.5); quizMode='all';
+  }
   qi=0; renderQuiz(); go('quiz');
 }
 function renderQuiz(){
   const w=document.getElementById('quizwrap');
   if(qi>=quizOrder.length){
     const done = D.mistakes.filter(m=>learned[m.id]).length;
-    w.innerHTML=`<div class="done"><h2>お疲れさま！🎉</h2><p>全${quizOrder.length}問チェック完了。<br>習得済み ${done}/${D.mistakes.length} 項目。</p>
-      <div class="qbtns"><button class="breveal" onclick="startQuiz()">もう一周</button><button class="bhard" onclick="go('home')">ホームへ</button></div></div>`;
+    const wk = weakCount();
+    const weakBtn = wk?`<button class="bhard" onclick="startQuiz(true)">⚠️苦手だけ復習（${wk}問）</button>`:'';
+    w.innerHTML=`<div class="done"><h2>お疲れさま！🎉</h2><p>全${quizOrder.length}問チェック完了。<br>習得済み ${done}/${D.mistakes.length} 項目 ・ ⚠️苦手 ${wk}問。</p>
+      <div class="qbtns"><button class="breveal" onclick="startQuiz()">全問もう一周</button>${weakBtn}</div>
+      <div class="qbtns"><button class="bhard" onclick="go('home')" style="border:1px solid var(--line)!important;color:var(--sub)">ホームへ</button></div></div>`;
     return;
   }
   const m=quizOrder[qi];
   w.innerHTML=`
-    <div class="qcount">${qi+1} / ${quizOrder.length}</div>
+    <div class="qcount">${quizMode==='weak'?'⚠️苦手モード ':''}${qi+1} / ${quizOrder.length}</div>
     <div class="qcard">
       <div class="qcat" style="color:${catColor[m.cat]}">${m.cat} ・ ${m.id}</div>
       ${m.topic?`<div class="qtopic">📍 ${esc(m.topic)}</div>`:''}
@@ -277,7 +298,12 @@ function reveal(){
     `<button class="bhard" onclick="grade(false)">まだ不安 🔁</button>
      <button class="beasy" onclick="grade(true)">できた ✅</button>`;
 }
-function grade(ok){ const m=quizOrder[qi]; if(ok) learned[m.id]=true; save(); qi++; renderQuiz(); }
+function grade(ok){
+  const m=quizOrder[qi];
+  if(ok){ learned[m.id]=true; delete weak[m.id]; }      // できた → 習得、苦手マークを外す
+  else { weak[m.id]=true; learned[m.id]=false; }          // まだ不安 → 苦手として保存
+  save(); qi++; renderQuiz();
+}
 
 // TOP5
 function buildTop5(){
@@ -303,6 +329,8 @@ function go(v){
   document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on', b.dataset.v===v));
   // クイズ画面に来たら、まだ始まっていなければ自動でスタート
   if(v==='quiz' && document.getElementById('quizwrap').children.length===0){ startQuiz(); }
+  // カード画面は最新の習得/苦手を反映して再描画
+  if(v==='cards'){ if(curCat==='⚠️苦手' && weakCount()===0) curCat='すべて'; buildFilter(); buildCards(); }
   window.scrollTo(0,0);
 }
 
