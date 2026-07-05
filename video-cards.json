@@ -67,6 +67,16 @@
           "ex": "I graduated from graduate school, where I studied IT.",
           "exja": "私は大学院を卒業し、そこでITを学びました。",
           "ctx": "経歴として「大学院を卒業した」と述べる場面。"
+        },
+        {
+          "id": "49",
+          "topic": "Task2: 菜食主義",
+          "wrong": "I could some agree to this thought",
+          "right": "I can somewhat agree with this opinion",
+          "why": "some（限定詞）では「いくらか同意」を表せない。程度を表すのは副詞 somewhat。同意は agree with + 意見。",
+          "ex": "I can somewhat agree with this opinion.",
+          "exja": "私は、この意見にある程度は同意できます。",
+          "ctx": "「その観点からある程度は同意できる」と述べる場面。"
         }
       ]
     },
@@ -185,6 +195,26 @@
           "ex": "I studied IT at graduate school.",
           "exja": "私は大学院でITを学びました。",
           "ctx": "「ITを学んだ」と専攻を述べる場面。"
+        },
+        {
+          "id": "50",
+          "topic": "Task2: 菜食主義",
+          "wrong": "I describe about this issue",
+          "right": "I will describe this issue",
+          "why": "describe は他動詞で目的語を直接とる。about は不要（discuss / study も同様）。",
+          "ex": "Let me describe this issue from a religious standpoint.",
+          "exja": "宗教的な観点から、この問題を説明させてください。",
+          "ctx": "「宗教の観点からこの問題を説明する」と切り出す場面。"
+        },
+        {
+          "id": "51",
+          "topic": "Task2: 菜食主義",
+          "wrong": "I am going to state this reason for my idea",
+          "right": "I will state the reasons for my opinion",
+          "why": "「〜の理由」は the reason(s) for。理由が複数なら reasons。idea より opinion が自然。",
+          "ex": "I will state the reasons for my opinion.",
+          "exja": "私は、自分の意見の理由を述べます。",
+          "ctx": "「自分の意見の理由を述べる」と予告する場面。"
         }
       ]
     },
@@ -273,6 +303,16 @@
           "ex": "I have recently been developing mobile applications.",
           "exja": "私は最近、モバイルアプリを開発しています。",
           "ctx": "「モバイルアプリを開発している」と述べる場面。"
+        },
+        {
+          "id": "57",
+          "topic": "Task2: 菜食主義",
+          "wrong": "is good opportunity to re-think",
+          "right": "is a good opportunity to rethink",
+          "why": "単数・不特定の可算名詞には a/an。a good opportunity。",
+          "ex": "This is a good opportunity to rethink our eating habits.",
+          "exja": "これは、私たちの食習慣を見直す良い機会です。",
+          "ctx": "「食の大切さを見直す良い機会だ」と締める場面。"
         }
       ]
     },
@@ -461,6 +501,56 @@
           "ex": "In more detail, the youngest group made up just over half.",
           "exja": "より詳しく見ると、最年少の層が半分強を占めていました。",
           "ctx": "概要のあと、細部の数値に入る場面。"
+        },
+        {
+          "id": "52",
+          "topic": "Task2: 菜食主義",
+          "wrong": "the thinking way of vegetarians",
+          "right": "the way of thinking of vegetarians",
+          "why": "「考え方」は the way of thinking。thinking way とは言わない。",
+          "ex": "The way of thinking of vegetarians resembles certain religious beliefs.",
+          "exja": "ベジタリアンの考え方は、ある宗教的信条に似ています。",
+          "ctx": "「ベジタリアンの考え方」と表現する場面。"
+        },
+        {
+          "id": "53",
+          "topic": "Task2: 菜食主義",
+          "wrong": "Almost of all muslims do not have porks",
+          "right": "Almost all Muslims do not consume pork",
+          "why": "「食べる」は eat / consume（have より consume が自然）。pork は不可算で複数 s を付けない。Muslims は大文字。",
+          "ex": "Almost all Muslims do not consume pork for religious reasons.",
+          "exja": "ほとんどのイスラム教徒は、宗教上の理由で豚肉を食べません。",
+          "ctx": "「多くのイスラム教徒は宗教上、豚肉を食べない」と例示する場面。"
+        },
+        {
+          "id": "54",
+          "topic": "Task2: 菜食主義",
+          "wrong": "hindees do not eat porks and beefs",
+          "right": "Hindus do not eat pork or beef",
+          "why": "pork / beef は不可算（複数 s 不可）。否定文で「A も B も〜ない」は and ではなく or。",
+          "ex": "Hindus do not eat pork or beef.",
+          "exja": "ヒンドゥー教徒は、豚肉も牛肉も食べません。",
+          "ctx": "「ヒンドゥー教徒は豚肉も牛肉も食べない」と続ける場面。"
+        },
+        {
+          "id": "55",
+          "topic": "Task2: 菜食主義",
+          "wrong": "global warmings and environmental dicernings",
+          "right": "climate change and environmental concerns",
+          "why": "global warming は不可算（warmings 不可）。定番語は climate change / environmental concern(s)。",
+          "ex": "Climate change and environmental concerns are widely discussed today.",
+          "exja": "気候変動と環境問題は、今日広く議論されています。",
+          "ctx": "「気候変動や環境問題が近年議論されている」と述べる場面。"
+        },
+        {
+          "id": "56",
+          "topic": "Task2: 菜食主義",
+          "wrong": "come from lack of appreciation",
+          "right": "stem from a lack of appreciation",
+          "why": "「〜に起因する」は stem from。「〜の不足」は a lack of と a が付く定型。",
+          "ex": "The problem may stem from a lack of appreciation.",
+          "exja": "その問題は、感謝の気持ちの欠如から生じているのかもしれません。",
+          "ctx": "「感謝の欠如から来ているのかもしれない」と述べる場面。"
         }
       ]
     },
@@ -519,6 +609,36 @@
           "ex": "I am well suited to teaching IT to children.",
           "exja": "私は、子どもにITを教えるのに適しています。",
           "ctx": "「ITを教えるのに適任」とアピールする場面。"
+        },
+        {
+          "id": "58",
+          "topic": "Task2: 菜食主義",
+          "wrong": "I believe in this problem is going to be treated",
+          "right": "I believe this matter can be viewed through religion",
+          "why": "意見は believe (that) + 節。believe in は「〜を信頼する」で意味が違い、in を入れると文がねじれる。",
+          "ex": "I believe this issue can be viewed from several angles.",
+          "exja": "私は、この問題はいくつかの角度から捉えられると思います。",
+          "ctx": "「この問題は宗教の観点から捉えられると思う」と述べる場面。"
+        },
+        {
+          "id": "59",
+          "topic": "Task2: 菜食主義",
+          "wrong": "Whether vegitarians or not is a trivial problem",
+          "right": "Whether one chooses to be a vegetarian or not is a personal decision",
+          "why": "whether 節には主語＋動詞が必要。Whether vegetarians or not では主語・動詞が欠落している。",
+          "ex": "Whether one becomes a vegetarian or not is a personal choice.",
+          "exja": "ベジタリアンになるかどうかは、個人の選択です。",
+          "ctx": "「ベジタリアンかどうかは個人の選択だ」と述べる場面。"
+        },
+        {
+          "id": "60",
+          "topic": "Task2: 菜食主義",
+          "wrong": "So, maybe discussion of vegetarianism is good",
+          "right": "Therefore, discussing vegetarianism is good",
+          "why": "書き言葉では文頭に等位接続詞(And/But/So)を置かない。接続副詞(Therefore/However/Similarly)を使う。",
+          "ex": "Therefore, discussing vegetarianism is a good opportunity to rethink our habits.",
+          "exja": "同様に、ヒンドゥー教徒も特定の種類の肉を避けます。",
+          "ctx": "文と文をつなぐ接続詞を選ぶ場面（書き言葉）。"
         }
       ]
     }

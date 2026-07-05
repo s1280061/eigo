@@ -208,7 +208,57 @@ window.IELTS_DATA = {
     { id:"48", cat:"文構造", topic:"手紙: 塾への応募", ctx:"「ITを教えるのに適任」とアピールする場面。",
       wrong:"I can suitable for teaching", right:"I am suitable / well qualified for teaching",
       why:"suitable は形容詞なので be動詞が必要（can は不可）。I am suitable for + 名詞。",
-      ex:"I am well suited to teaching IT to children." }
+      ex:"I am well suited to teaching IT to children." },
+
+    // ── Task2: 菜食主義（ベジタリアン）──
+    { id:"49", cat:"品詞", topic:"Task2: 菜食主義", ctx:"「その観点からある程度は同意できる」と述べる場面。",
+      wrong:"I could some agree to this thought", right:"I can somewhat agree with this opinion",
+      why:"some（限定詞）では「いくらか同意」を表せない。程度を表すのは副詞 somewhat。同意は agree with + 意見。",
+      ex:"I can somewhat agree with this opinion." },
+    { id:"50", cat:"前置詞", topic:"Task2: 菜食主義", ctx:"「宗教の観点からこの問題を説明する」と切り出す場面。",
+      wrong:"I describe about this issue", right:"I will describe this issue",
+      why:"describe は他動詞で目的語を直接とる。about は不要（discuss / study も同様）。",
+      ex:"Let me describe this issue from a religious standpoint." },
+    { id:"51", cat:"前置詞", topic:"Task2: 菜食主義", ctx:"「自分の意見の理由を述べる」と予告する場面。",
+      wrong:"I am going to state this reason for my idea", right:"I will state the reasons for my opinion",
+      why:"「〜の理由」は the reason(s) for。理由が複数なら reasons。idea より opinion が自然。",
+      ex:"I will state the reasons for my opinion." },
+    { id:"52", cat:"コロケーション", topic:"Task2: 菜食主義", ctx:"「ベジタリアンの考え方」と表現する場面。",
+      wrong:"the thinking way of vegetarians", right:"the way of thinking of vegetarians",
+      why:"「考え方」は the way of thinking。thinking way とは言わない。",
+      ex:"The way of thinking of vegetarians resembles certain religious beliefs." },
+    { id:"53", cat:"コロケーション", topic:"Task2: 菜食主義", ctx:"「多くのイスラム教徒は宗教上、豚肉を食べない」と例示する場面。",
+      wrong:"Almost of all muslims do not have porks", right:"Almost all Muslims do not consume pork",
+      why:"「食べる」は eat / consume（have より consume が自然）。pork は不可算で複数 s を付けない。Muslims は大文字。",
+      ex:"Almost all Muslims do not consume pork for religious reasons." },
+    { id:"54", cat:"コロケーション", topic:"Task2: 菜食主義", ctx:"「ヒンドゥー教徒は豚肉も牛肉も食べない」と続ける場面。",
+      wrong:"hindees do not eat porks and beefs", right:"Hindus do not eat pork or beef",
+      why:"pork / beef は不可算（複数 s 不可）。否定文で「A も B も〜ない」は and ではなく or。",
+      ex:"Hindus do not eat pork or beef." },
+    { id:"55", cat:"コロケーション", topic:"Task2: 菜食主義", ctx:"「気候変動や環境問題が近年議論されている」と述べる場面。",
+      wrong:"global warmings and environmental dicernings", right:"climate change and environmental concerns",
+      why:"global warming は不可算（warmings 不可）。定番語は climate change / environmental concern(s)。",
+      ex:"Climate change and environmental concerns are widely discussed today." },
+    { id:"56", cat:"コロケーション", topic:"Task2: 菜食主義", ctx:"「感謝の欠如から来ているのかもしれない」と述べる場面。",
+      wrong:"come from lack of appreciation", right:"stem from a lack of appreciation",
+      why:"「〜に起因する」は stem from。「〜の不足」は a lack of と a が付く定型。",
+      ex:"The problem may stem from a lack of appreciation." },
+    { id:"57", cat:"冠詞", topic:"Task2: 菜食主義", ctx:"「食の大切さを見直す良い機会だ」と締める場面。",
+      wrong:"is good opportunity to re-think", right:"is a good opportunity to rethink",
+      why:"単数・不特定の可算名詞には a/an。a good opportunity。",
+      ex:"This is a good opportunity to rethink our eating habits." },
+    { id:"58", cat:"文構造", topic:"Task2: 菜食主義", ctx:"「この問題は宗教の観点から捉えられると思う」と述べる場面。",
+      wrong:"I believe in this problem is going to be treated", right:"I believe this matter can be viewed through religion",
+      why:"意見は believe (that) + 節。believe in は「〜を信頼する」で意味が違い、in を入れると文がねじれる。",
+      ex:"I believe this issue can be viewed from several angles." },
+    { id:"59", cat:"文構造", topic:"Task2: 菜食主義", ctx:"「ベジタリアンかどうかは個人の選択だ」と述べる場面。",
+      wrong:"Whether vegitarians or not is a trivial problem", right:"Whether one chooses to be a vegetarian or not is a personal decision",
+      why:"whether 節には主語＋動詞が必要。Whether vegetarians or not では主語・動詞が欠落している。",
+      ex:"Whether one becomes a vegetarian or not is a personal choice." },
+    { id:"60", cat:"文構造", topic:"Task2: 菜食主義", ctx:"文と文をつなぐ接続詞を選ぶ場面（書き言葉）。",
+      wrong:"So, maybe discussion of vegetarianism is good", right:"Therefore, discussing vegetarianism is good",
+      why:"書き言葉では文頭に等位接続詞(And/But/So)を置かない。接続副詞(Therefore/However/Similarly)を使う。",
+      ex:"Therefore, discussing vegetarianism is a good opportunity to rethink our habits." }
   ],
 
   top5: [
@@ -265,6 +315,10 @@ window.IELTS_DATA = {
 
     { id:"E6", title:"手紙: 塾への応募（フォーマル）", words:"150語以上", prompt:"Write a letter. Begin: Dear Sir or Madam,",
       original:"Dear Sir,\n\nI am Kaito from Japan who am intersted in your cram school. I am curious your cram school seeing its advertisement.\n\nI have graduated from graduated school in Japan, studying about IT. So I can teach the programming and IT. And Also, I recently have been developing moble application, so I can suitable for teaching IT to the children who are interested in IT.\n\nSincerely,",
-      natural:"Dear Sir,\n\nI am Kaito from Japan, and I am interested in your cram school. I became curious about your cram school after seeing its advertisement.\n\nI graduated from graduate school in Japan, where I studied IT, so I can teach programming and IT. Also, I have recently been developing mobile applications, which means I am well suited to teaching IT to children who are interested in the field.\n\nI look forward to hearing from you.\n\nSincerely,\nKaito" }
+      natural:"Dear Sir,\n\nI am Kaito from Japan, and I am interested in your cram school. I became curious about your cram school after seeing its advertisement.\n\nI graduated from graduate school in Japan, where I studied IT, so I can teach programming and IT. Also, I have recently been developing mobile applications, which means I am well suited to teaching IT to children who are interested in the field.\n\nI look forward to hearing from you.\n\nSincerely,\nKaito" },
+
+    { id:"E7", title:"Task2: 菜食主義（ベジタリアン）", words:"250語以上", prompt:"Some people believe that everyone should adopt a vegetarian diet. To what extent do you agree? Give reasons and examples.",
+      original:"It is difficult to answer to that because this problem is sensitive. I believe in this problem is going to be treated as a kind of a religion issue. I could some agree to this thought of vegetarians from that aspect. I am going to state this reason for my idea.\n\nFist of all, I describe about this issue from aspect of religion problem. For example, Almost of all muslims do not have porks because of aspetct of religion issue. And also hindees do not eat porks and beefs. In that sense, the thinking way of vegetarians is simillar to the regilion issues representative for muslims and hindees.\n\nSecondly, this problem could be thought from the perspective of era. I wonder there has been lots of vegetarians since long times ago. Global problem such as global warmings and environmental dicernings have been discussed lately. In that sense, the idea of vegitarians could be thought as a relevant isssue to that global problem. Under affects of the propagation of the internet, this vegetarians problem has been discussing more frequently. Whether vegitarians or not is a trivial problem I think. But when some people see and meet the vegitarians's idea via internet who are not familiar with that idea, discussion between vegetarians and not are vitalised.\n\nLastly, the aspect of eating meets of animals is too highlighted to discuss. We have been appreciated when we eat food in Japan since long times ago. The reasons for attention of vegetalisms maybe come from lack of aprreciation. Today, methods in the field of technology such as delivery tasks and plantation, farming, and live stocks are very mature comparing to the very old era. So, maybe discussion of vegitalisms is good opportunity to re-think the importance of food inculuding both of animals and vegitables in this era.",
+      natural:"It is difficult to address this issue because it is sensitive. I believe this matter can be viewed through the lens of religious beliefs. From this perspective, I can somewhat agree with the thoughts of vegetarians. I will state the reasons for my opinion.\n\nFirst of all, I will describe this issue from a religious standpoint. For example, almost all Muslims do not consume pork because of religious beliefs. Similarly, Hindus do not eat pork or beef. In that sense, the way of thinking of vegetarians can be compared to the religious beliefs of Muslims and Hindus.\n\nSecondly, this problem can also be examined from a historical perspective. There have been many vegetarians for a long time. Global problems such as climate change and environmental concerns have been discussed lately. In this context, vegetarianism can be viewed as a relevant response to these global challenges. With the proliferation of the internet, discussions about vegetarianism have become more frequent. Whether one chooses to be a vegetarian or not is a personal decision. Still, when those unfamiliar with the idea encounter vegetarians online, it stimulates important discussions between the two perspectives.\n\nLastly, the topic of eating animal meat deserves attention. In Japan, we have long expressed gratitude for the food we consume. The rising focus on vegetarianism might stem from a lack of appreciation for our food sources. Today, advancements in technology, such as delivery services, agriculture, and livestock management, are more developed than in the past. Therefore, discussing vegetarianism presents a good opportunity to rethink the importance of food, including both animal meat and vegetables, in this era." }
   ]
 };
