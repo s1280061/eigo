@@ -13,7 +13,8 @@ const enTitle = {
   E3: "A successful multicultural country",
   E4: "The most popular festival in Japan",
   E5: "Facebook users by age group",
-  E6: "Application letter"
+  E6: "Application letter",
+  E7: "Vegetarianism: for and against"
 };
 const catEn = {
   "品詞": "Word Form",
