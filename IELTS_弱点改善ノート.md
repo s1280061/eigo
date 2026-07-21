@@ -10,7 +10,7 @@
 
 ## 目次
 1. [全体講評](#1-全体講評)
-2. [カテゴリ別 ミス一覧（全60項目）](#2-カテゴリ別-ミス一覧全60項目)
+2. [カテゴリ別 ミス一覧（全61項目）](#2-カテゴリ別-ミス一覧全61項目)
 3. [模範解答（原文 → 自然な表現 → 改良版）](#3-模範解答原文--自然な表現--改良版)
 4. [苦手ポイント TOP5](#4-苦手ポイント-top5)
 5. [1週間 練習メニュー](#5-1週間-練習メニュー)
@@ -25,7 +25,7 @@
 
 ---
 
-## 2. カテゴリ別 ミス一覧（全60項目）
+## 2. カテゴリ別 ミス一覧（全61項目）
 
 ### 品詞（7項目）
 _Word Form — 名詞を無理に動詞化しない。形容詞と名詞を使い分ける。_
@@ -463,7 +463,7 @@ _Collocations — 自然に結びつく語の組み合わせ。_
 
 ---
 
-### 文構造（8項目）
+### 文構造（9項目）
 _Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
 
 #### 30. 会話: 多文化の成功例(米国)
@@ -529,6 +529,14 @@ _Sentence Structure — 動詞・be動詞・語順の欠落を直す。_
 - ✅ **正しい**: **Therefore, discussing vegetarianism is good**
 - 💡 **なぜ**: 書き言葉では文頭に等位接続詞(And/But/So)を置かない。接続副詞(Therefore/However/Similarly)を使う。
 - 📝 **例文**: *Therefore, discussing vegetarianism is a good opportunity to rethink our habits.*
+
+#### 61. 文法: a number of / the number of
+📍 **状況**: 「多くの〜」か「〜の数」かで動詞の単複が変わる場面。
+
+- ❌ **誤り**: A number of factors has contributed
+- ✅ **正しい**: **A number of factors have contributed**
+- 💡 **なぜ**: a number of + 複数名詞 =「多くの〜」で動詞は複数(have/are)。中心は後ろの複数名詞。一方 the number of + 複数名詞 =「〜の数」で中心は number（単数）→動詞は単数(has/is)。a number of は many に置き換えられれば複数動詞。
+- 📝 **例文**: *A number of factors have contributed to this problem.*
 
 ---
 

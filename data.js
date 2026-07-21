@@ -258,7 +258,11 @@ window.IELTS_DATA = {
     { id:"60", cat:"文構造", topic:"Task2: 菜食主義", ctx:"文と文をつなぐ接続詞を選ぶ場面（書き言葉）。",
       wrong:"So, maybe discussion of vegetarianism is good", right:"Therefore, discussing vegetarianism is good",
       why:"書き言葉では文頭に等位接続詞(And/But/So)を置かない。接続副詞(Therefore/However/Similarly)を使う。",
-      ex:"Therefore, discussing vegetarianism is a good opportunity to rethink our habits." }
+      ex:"Therefore, discussing vegetarianism is a good opportunity to rethink our habits." },
+    { id:"61", cat:"文構造", topic:"文法: a number of / the number of", ctx:"「多くの〜」か「〜の数」かで動詞の単複が変わる場面。",
+      wrong:"A number of factors has contributed", right:"A number of factors have contributed",
+      why:"a number of + 複数名詞 =「多くの〜」で動詞は複数(have/are)。中心は後ろの複数名詞。一方 the number of + 複数名詞 =「〜の数」で中心は number（単数）→動詞は単数(has/is)。a number of は many に置き換えられれば複数動詞。",
+      ex:"A number of factors have contributed to this problem." }
   ],
 
   top5: [
